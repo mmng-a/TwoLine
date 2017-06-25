@@ -13,11 +13,25 @@ class TabButtonTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTabButton()
+        setupHomeTab()
         
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setupHomeTab() {
+        
+        let pageVC = TabPageViewController.create()
+        let vc1 = UIViewController()
+        let vc2 = UIViewController()
+        pageVC.tabItems = [(vc1, "Home"), (vc2, "Notice")]
+        pageVC.tabBarItem.image = UIImage(named: "Home.png")
+        self.viewControllers?.insert(pageVC, at: 0)
+        if pageVC.tabItems.count >= 3 {
+            pageVC.isInfinity = true
+        }
     }
     
     private func setupTabButton(){
@@ -32,4 +46,6 @@ class TabButtonTabBarController: UITabBarController {
     func test() {
         print("push TabButton")
     }
+    
+    
 }

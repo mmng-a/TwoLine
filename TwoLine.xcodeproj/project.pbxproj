@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E63C82B21EF0DCDB004AFBA8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E63C82A81EF0DCDB004AFBA8 /* Info.plist */; };
-		E63C82B31EF0DCDB004AFBA8 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C82A91EF0DCDB004AFBA8 /* TabCollectionCell.swift */; };
-		E63C82B41EF0DCDB004AFBA8 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63C82AA1EF0DCDB004AFBA8 /* TabCollectionCell.xib */; };
-		E63C82B51EF0DCDB004AFBA8 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C82AB1EF0DCDB004AFBA8 /* TabPageOption.swift */; };
-		E63C82B61EF0DCDB004AFBA8 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C82AC1EF0DCDB004AFBA8 /* TabPageViewController.swift */; };
-		E63C82B71EF0DCDB004AFBA8 /* TabPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63C82AE1EF0DCDB004AFBA8 /* TabPageViewController.storyboard */; };
-		E63C82B81EF0DCDB004AFBA8 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C82AF1EF0DCDB004AFBA8 /* TabView.swift */; };
-		E63C82B91EF0DCDB004AFBA8 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63C82B01EF0DCDB004AFBA8 /* TabView.xib */; };
+		E631B2A21EFF886D008A8A91 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29D1EFF886D008A8A91 /* Home.png */; };
+		E631B2A31EFF886D008A8A91 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29E1EFF886D008A8A91 /* reload.png */; };
+		E631B2A41EFF886D008A8A91 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29F1EFF886D008A8A91 /* Search.png */; };
+		E631B2A51EFF886D008A8A91 /* Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B2A01EFF886D008A8A91 /* Setting.png */; };
+		E631B2A61EFF886D008A8A91 /* Tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B2A11EFF886D008A8A91 /* Tweet.png */; };
+		E631B2B11EFF88E0008A8A91 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E631B2A81EFF88E0008A8A91 /* Info.plist */; };
+		E631B2B21EFF88E0008A8A91 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631B2A91EFF88E0008A8A91 /* TabCollectionCell.swift */; };
+		E631B2B31EFF88E0008A8A91 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631B2AA1EFF88E0008A8A91 /* TabCollectionCell.xib */; };
+		E631B2B41EFF88E0008A8A91 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631B2AB1EFF88E0008A8A91 /* TabPageOption.swift */; };
+		E631B2B51EFF88E0008A8A91 /* TabPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E631B2AD1EFF88E0008A8A91 /* TabPageViewController.storyboard */; };
+		E631B2B61EFF88E0008A8A91 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631B2AE1EFF88E0008A8A91 /* TabPageViewController.swift */; };
+		E631B2B71EFF88E0008A8A91 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631B2AF1EFF88E0008A8A91 /* TabView.swift */; };
+		E631B2B81EFF88E0008A8A91 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631B2B01EFF88E0008A8A91 /* TabView.xib */; };
 		E63C83341EFF5BF5004AFBA8 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C83331EFF5BF5004AFBA8 /* TopView.swift */; };
 		E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */; };
-		E68DD4411EDA9C3E004D505E /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = E68DD4401EDA9C3E004D505E /* reload.png */; };
 		E68DD4431EDAAAD7004D505E /* dummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD4421EDAAAD7004D505E /* dummyViewController.swift */; };
-		E68DD4471EDBD789004D505E /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD4461EDBD789004D505E /* HomeTab.swift */; };
 		E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7921EC81B24001FEC62 /* AppDelegate.swift */; };
 		E69EB7951EC81B24001FEC62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7941EC81B24001FEC62 /* HomeViewController.swift */; };
 		E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7961EC81B24001FEC62 /* SearchViewController.swift */; };
@@ -28,21 +31,10 @@
 		E69EB79F1EC81B24001FEC62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69EB79D1EC81B24001FEC62 /* LaunchScreen.storyboard */; };
 		E69EB7AA1EC81B24001FEC62 /* TwoLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7A91EC81B24001FEC62 /* TwoLineTests.swift */; };
 		E69EB7B51EC81B24001FEC62 /* TwoLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7B41EC81B24001FEC62 /* TwoLineUITests.swift */; };
-		E69EB7D41EC829AC001FEC62 /* ダウンロードアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7CD1EC829AC001FEC62 /* ダウンロードアイコン.png */; };
-		E69EB7D51EC829AC001FEC62 /* リンクアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7CE1EC829AC001FEC62 /* リンクアイコン.png */; };
-		E69EB7D61EC829AC001FEC62 /* いいねアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7CF1EC829AC001FEC62 /* いいねアイコン.png */; };
-		E69EB7D71EC829AC001FEC62 /* その他アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7D01EC829AC001FEC62 /* その他アイコン.png */; };
-		E69EB7D81EC829AD001FEC62 /* RTアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7D11EC829AC001FEC62 /* RTアイコン.png */; };
-		E69EB7D91EC829AD001FEC62 /* リプライアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7D21EC829AC001FEC62 /* リプライアイコン.png */; };
-		E69EB7DA1EC829AD001FEC62 /* リロードアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7D31EC829AC001FEC62 /* リロードアイコン.png */; };
 		E69EB7DE1EC82C13001FEC62 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7DD1EC82C13001FEC62 /* Setting.swift */; };
 		E69EB7E01EC83A34001FEC62 /* tweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7DF1EC83A34001FEC62 /* tweetViewController.swift */; };
 		E69EB7E71EC98695001FEC62 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7E61EC98695001FEC62 /* User.swift */; };
 		E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7E81EC98A05001FEC62 /* Tweet.swift */; };
-		E69EB7EF1EC9986C001FEC62 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7EB1EC9986C001FEC62 /* Home.png */; };
-		E69EB7F01EC9986C001FEC62 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7EC1EC9986C001FEC62 /* Search.png */; };
-		E69EB7F21EC9986C001FEC62 /* Tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7EE1EC9986C001FEC62 /* Tweet.png */; };
-		E69EB7F41EC99CB2001FEC62 /* Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7F31EC99CB2001FEC62 /* Setting.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,20 +55,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E63C82A81EF0DCDB004AFBA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../../Downloads/TabPageViewController-master/Sources/Info.plist"; sourceTree = "<group>"; };
-		E63C82A91EF0DCDB004AFBA8 /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabCollectionCell.swift; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabCollectionCell.swift"; sourceTree = "<group>"; };
-		E63C82AA1EF0DCDB004AFBA8 /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabCollectionCell.xib; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabCollectionCell.xib"; sourceTree = "<group>"; };
-		E63C82AB1EF0DCDB004AFBA8 /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabPageOption.swift; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabPageOption.swift"; sourceTree = "<group>"; };
-		E63C82AC1EF0DCDB004AFBA8 /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabPageViewController.swift; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabPageViewController.swift"; sourceTree = "<group>"; };
-		E63C82AD1EF0DCDB004AFBA8 /* TabPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabPageViewController.h; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabPageViewController.h"; sourceTree = "<group>"; };
-		E63C82AE1EF0DCDB004AFBA8 /* TabPageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TabPageViewController.storyboard; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabPageViewController.storyboard"; sourceTree = "<group>"; };
-		E63C82AF1EF0DCDB004AFBA8 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabView.swift"; sourceTree = "<group>"; };
-		E63C82B01EF0DCDB004AFBA8 /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabView.xib; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabView.xib"; sourceTree = "<group>"; };
+		E631B29D1EFF886D008A8A91 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		E631B29E1EFF886D008A8A91 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+		E631B29F1EFF886D008A8A91 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
+		E631B2A01EFF886D008A8A91 /* Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Setting.png; sourceTree = "<group>"; };
+		E631B2A11EFF886D008A8A91 /* Tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tweet.png; sourceTree = "<group>"; };
+		E631B2A81EFF88E0008A8A91 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E631B2A91EFF88E0008A8A91 /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabCollectionCell.swift; sourceTree = "<group>"; };
+		E631B2AA1EFF88E0008A8A91 /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabCollectionCell.xib; sourceTree = "<group>"; };
+		E631B2AB1EFF88E0008A8A91 /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageOption.swift; sourceTree = "<group>"; };
+		E631B2AC1EFF88E0008A8A91 /* TabPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabPageViewController.h; sourceTree = "<group>"; };
+		E631B2AD1EFF88E0008A8A91 /* TabPageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabPageViewController.storyboard; sourceTree = "<group>"; };
+		E631B2AE1EFF88E0008A8A91 /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
+		E631B2AF1EFF88E0008A8A91 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		E631B2B01EFF88E0008A8A91 /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
 		E63C83331EFF5BF5004AFBA8 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtonTabBarController.swift; sourceTree = "<group>"; };
-		E68DD4401EDA9C3E004D505E /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
 		E68DD4421EDAAAD7004D505E /* dummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dummyViewController.swift; sourceTree = "<group>"; };
-		E68DD4461EDBD789004D505E /* HomeTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
 		E69EB78F1EC81B24001FEC62 /* TwoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69EB7921EC81B24001FEC62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E69EB7941EC81B24001FEC62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -91,21 +86,10 @@
 		E69EB7B01EC81B24001FEC62 /* TwoLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69EB7B41EC81B24001FEC62 /* TwoLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLineUITests.swift; sourceTree = "<group>"; };
 		E69EB7B61EC81B24001FEC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E69EB7CD1EC829AC001FEC62 /* ダウンロードアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ダウンロードアイコン.png"; path = "../../../../Downloads/ダウンロードアイコン.png"; sourceTree = "<group>"; };
-		E69EB7CE1EC829AC001FEC62 /* リンクアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "リンクアイコン.png"; path = "../../../../Downloads/リンクアイコン.png"; sourceTree = "<group>"; };
-		E69EB7CF1EC829AC001FEC62 /* いいねアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "いいねアイコン.png"; path = "../../../../Downloads/いいねアイコン.png"; sourceTree = "<group>"; };
-		E69EB7D01EC829AC001FEC62 /* その他アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "その他アイコン.png"; path = "../../../../Downloads/その他アイコン.png"; sourceTree = "<group>"; };
-		E69EB7D11EC829AC001FEC62 /* RTアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RTアイコン.png"; path = "../../../../Downloads/RTアイコン.png"; sourceTree = "<group>"; };
-		E69EB7D21EC829AC001FEC62 /* リプライアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "リプライアイコン.png"; path = "../../../../Downloads/リプライアイコン.png"; sourceTree = "<group>"; };
-		E69EB7D31EC829AC001FEC62 /* リロードアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "リロードアイコン.png"; path = "../../../../Downloads/リロードアイコン.png"; sourceTree = "<group>"; };
 		E69EB7DD1EC82C13001FEC62 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		E69EB7DF1EC83A34001FEC62 /* tweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tweetViewController.swift; sourceTree = "<group>"; };
 		E69EB7E61EC98695001FEC62 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E69EB7E81EC98A05001FEC62 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
-		E69EB7EB1EC9986C001FEC62 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
-		E69EB7EC1EC9986C001FEC62 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
-		E69EB7EE1EC9986C001FEC62 /* Tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tweet.png; sourceTree = "<group>"; };
-		E69EB7F31EC99CB2001FEC62 /* Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Setting.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,31 +117,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E63C82811EF0DB36004AFBA8 /* Sourcess */ = {
+		E631B29C1EFF886D008A8A91 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				E63C82A81EF0DCDB004AFBA8 /* Info.plist */,
-				E63C82A91EF0DCDB004AFBA8 /* TabCollectionCell.swift */,
-				E63C82AA1EF0DCDB004AFBA8 /* TabCollectionCell.xib */,
-				E63C82AB1EF0DCDB004AFBA8 /* TabPageOption.swift */,
-				E63C82AC1EF0DCDB004AFBA8 /* TabPageViewController.swift */,
-				E63C82AD1EF0DCDB004AFBA8 /* TabPageViewController.h */,
-				E63C82AE1EF0DCDB004AFBA8 /* TabPageViewController.storyboard */,
-				E63C82AF1EF0DCDB004AFBA8 /* TabView.swift */,
-				E63C82B01EF0DCDB004AFBA8 /* TabView.xib */,
+				E631B29D1EFF886D008A8A91 /* Home.png */,
+				E631B29E1EFF886D008A8A91 /* reload.png */,
+				E631B29F1EFF886D008A8A91 /* Search.png */,
+				E631B2A01EFF886D008A8A91 /* Setting.png */,
+				E631B2A11EFF886D008A8A91 /* Tweet.png */,
 			);
-			name = Sourcess;
-			path = TwoLine;
+			path = Image;
+			sourceTree = "<group>";
+		};
+		E631B2A71EFF88E0008A8A91 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E631B2A81EFF88E0008A8A91 /* Info.plist */,
+				E631B2A91EFF88E0008A8A91 /* TabCollectionCell.swift */,
+				E631B2AA1EFF88E0008A8A91 /* TabCollectionCell.xib */,
+				E631B2AB1EFF88E0008A8A91 /* TabPageOption.swift */,
+				E631B2AC1EFF88E0008A8A91 /* TabPageViewController.h */,
+				E631B2AD1EFF88E0008A8A91 /* TabPageViewController.storyboard */,
+				E631B2AE1EFF88E0008A8A91 /* TabPageViewController.swift */,
+				E631B2AF1EFF88E0008A8A91 /* TabView.swift */,
+				E631B2B01EFF88E0008A8A91 /* TabView.xib */,
+			);
+			name = Sources;
+			path = TwoLine/Sources;
 			sourceTree = "<group>";
 		};
 		E69EB7861EC81B24001FEC62 = {
 			isa = PBXGroup;
 			children = (
-				E69EB7EA1EC9986C001FEC62 /* TwoLine用Image */,
-				E69EB7C21EC81C2A001FEC62 /* Image */,
+				E631B29C1EFF886D008A8A91 /* Image */,
 				E69EB7E51EC98656001FEC62 /* Model */,
 				E69EB7911EC81B24001FEC62 /* TwoLine */,
-				E63C82811EF0DB36004AFBA8 /* Sourcess */,
+				E631B2A71EFF88E0008A8A91 /* Sources */,
 				E69EB7A81EC81B24001FEC62 /* TwoLineTests */,
 				E69EB7B31EC81B24001FEC62 /* TwoLineUITests */,
 				E69EB7901EC81B24001FEC62 /* Products */,
@@ -185,7 +180,6 @@
 				E69EB7DD1EC82C13001FEC62 /* Setting.swift */,
 				E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */,
 				E63C83331EFF5BF5004AFBA8 /* TopView.swift */,
-				E68DD4461EDBD789004D505E /* HomeTab.swift */,
 				E69EB7981EC81B24001FEC62 /* Main.storyboard */,
 				E69EB79B1EC81B24001FEC62 /* Assets.xcassets */,
 				E69EB79D1EC81B24001FEC62 /* LaunchScreen.storyboard */,
@@ -212,20 +206,6 @@
 			path = TwoLineUITests;
 			sourceTree = "<group>";
 		};
-		E69EB7C21EC81C2A001FEC62 /* Image */ = {
-			isa = PBXGroup;
-			children = (
-				E69EB7CD1EC829AC001FEC62 /* ダウンロードアイコン.png */,
-				E69EB7CE1EC829AC001FEC62 /* リンクアイコン.png */,
-				E69EB7CF1EC829AC001FEC62 /* いいねアイコン.png */,
-				E69EB7D01EC829AC001FEC62 /* その他アイコン.png */,
-				E69EB7D11EC829AC001FEC62 /* RTアイコン.png */,
-				E69EB7D21EC829AC001FEC62 /* リプライアイコン.png */,
-				E69EB7D31EC829AC001FEC62 /* リロードアイコン.png */,
-			);
-			name = Image;
-			sourceTree = "<group>";
-		};
 		E69EB7E51EC98656001FEC62 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,19 +214,6 @@
 			);
 			name = Model;
 			path = TwoLine;
-			sourceTree = "<group>";
-		};
-		E69EB7EA1EC9986C001FEC62 /* TwoLine用Image */ = {
-			isa = PBXGroup;
-			children = (
-				E69EB7EB1EC9986C001FEC62 /* Home.png */,
-				E69EB7EC1EC9986C001FEC62 /* Search.png */,
-				E69EB7EE1EC9986C001FEC62 /* Tweet.png */,
-				E69EB7F31EC99CB2001FEC62 /* Setting.png */,
-				E68DD4401EDA9C3E004D505E /* reload.png */,
-			);
-			name = "TwoLine用Image";
-			path = "../../../TwoLine用Image";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,25 +326,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E69EB7DA1EC829AD001FEC62 /* リロードアイコン.png in Resources */,
-				E69EB7D91EC829AD001FEC62 /* リプライアイコン.png in Resources */,
+				E631B2A21EFF886D008A8A91 /* Home.png in Resources */,
+				E631B2B31EFF88E0008A8A91 /* TabCollectionCell.xib in Resources */,
+				E631B2B81EFF88E0008A8A91 /* TabView.xib in Resources */,
+				E631B2A41EFF886D008A8A91 /* Search.png in Resources */,
+				E631B2B51EFF88E0008A8A91 /* TabPageViewController.storyboard in Resources */,
+				E631B2B11EFF88E0008A8A91 /* Info.plist in Resources */,
 				E69EB79F1EC81B24001FEC62 /* LaunchScreen.storyboard in Resources */,
-				E69EB7D41EC829AC001FEC62 /* ダウンロードアイコン.png in Resources */,
-				E68DD4411EDA9C3E004D505E /* reload.png in Resources */,
-				E69EB7EF1EC9986C001FEC62 /* Home.png in Resources */,
-				E63C82B91EF0DCDB004AFBA8 /* TabView.xib in Resources */,
-				E63C82B21EF0DCDB004AFBA8 /* Info.plist in Resources */,
 				E69EB79C1EC81B24001FEC62 /* Assets.xcassets in Resources */,
-				E69EB7D81EC829AD001FEC62 /* RTアイコン.png in Resources */,
-				E69EB7F01EC9986C001FEC62 /* Search.png in Resources */,
 				E69EB79A1EC81B24001FEC62 /* Main.storyboard in Resources */,
-				E63C82B71EF0DCDB004AFBA8 /* TabPageViewController.storyboard in Resources */,
-				E69EB7D51EC829AC001FEC62 /* リンクアイコン.png in Resources */,
-				E69EB7F21EC9986C001FEC62 /* Tweet.png in Resources */,
-				E69EB7D71EC829AC001FEC62 /* その他アイコン.png in Resources */,
-				E63C82B41EF0DCDB004AFBA8 /* TabCollectionCell.xib in Resources */,
-				E69EB7F41EC99CB2001FEC62 /* Setting.png in Resources */,
-				E69EB7D61EC829AC001FEC62 /* いいねアイコン.png in Resources */,
+				E631B2A61EFF886D008A8A91 /* Tweet.png in Resources */,
+				E631B2A51EFF886D008A8A91 /* Setting.png in Resources */,
+				E631B2A31EFF886D008A8A91 /* reload.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,20 +363,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E69EB7DE1EC82C13001FEC62 /* Setting.swift in Sources */,
+				E631B2B21EFF88E0008A8A91 /* TabCollectionCell.swift in Sources */,
 				E63C83341EFF5BF5004AFBA8 /* TopView.swift in Sources */,
-				E63C82B51EF0DCDB004AFBA8 /* TabPageOption.swift in Sources */,
+				E631B2B41EFF88E0008A8A91 /* TabPageOption.swift in Sources */,
 				E69EB7E01EC83A34001FEC62 /* tweetViewController.swift in Sources */,
-				E63C82B31EF0DCDB004AFBA8 /* TabCollectionCell.swift in Sources */,
-				E63C82B61EF0DCDB004AFBA8 /* TabPageViewController.swift in Sources */,
 				E69EB7E71EC98695001FEC62 /* User.swift in Sources */,
 				E68DD4431EDAAAD7004D505E /* dummyViewController.swift in Sources */,
 				E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */,
 				E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */,
 				E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */,
+				E631B2B71EFF88E0008A8A91 /* TabView.swift in Sources */,
 				E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */,
+				E631B2B61EFF88E0008A8A91 /* TabPageViewController.swift in Sources */,
 				E69EB7951EC81B24001FEC62 /* HomeViewController.swift in Sources */,
-				E68DD4471EDBD789004D505E /* HomeTab.swift in Sources */,
-				E63C82B81EF0DCDB004AFBA8 /* TabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
