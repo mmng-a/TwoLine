@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E63C82B21EF0DCDB004AFBA8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E63C82A81EF0DCDB004AFBA8 /* Info.plist */; };
+		E63C82B31EF0DCDB004AFBA8 /* TabCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C82A91EF0DCDB004AFBA8 /* TabCollectionCell.swift */; };
+		E63C82B41EF0DCDB004AFBA8 /* TabCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63C82AA1EF0DCDB004AFBA8 /* TabCollectionCell.xib */; };
+		E63C82B51EF0DCDB004AFBA8 /* TabPageOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C82AB1EF0DCDB004AFBA8 /* TabPageOption.swift */; };
+		E63C82B61EF0DCDB004AFBA8 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C82AC1EF0DCDB004AFBA8 /* TabPageViewController.swift */; };
+		E63C82B71EF0DCDB004AFBA8 /* TabPageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E63C82AE1EF0DCDB004AFBA8 /* TabPageViewController.storyboard */; };
+		E63C82B81EF0DCDB004AFBA8 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C82AF1EF0DCDB004AFBA8 /* TabView.swift */; };
+		E63C82B91EF0DCDB004AFBA8 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63C82B01EF0DCDB004AFBA8 /* TabView.xib */; };
+		E63C83341EFF5BF5004AFBA8 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C83331EFF5BF5004AFBA8 /* TopView.swift */; };
+		E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */; };
+		E68DD4411EDA9C3E004D505E /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = E68DD4401EDA9C3E004D505E /* reload.png */; };
+		E68DD4431EDAAAD7004D505E /* dummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD4421EDAAAD7004D505E /* dummyViewController.swift */; };
+		E68DD4471EDBD789004D505E /* HomeTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD4461EDBD789004D505E /* HomeTab.swift */; };
+		E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7921EC81B24001FEC62 /* AppDelegate.swift */; };
+		E69EB7951EC81B24001FEC62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7941EC81B24001FEC62 /* HomeViewController.swift */; };
+		E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7961EC81B24001FEC62 /* SearchViewController.swift */; };
+		E69EB79A1EC81B24001FEC62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7981EC81B24001FEC62 /* Main.storyboard */; };
+		E69EB79C1EC81B24001FEC62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E69EB79B1EC81B24001FEC62 /* Assets.xcassets */; };
+		E69EB79F1EC81B24001FEC62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E69EB79D1EC81B24001FEC62 /* LaunchScreen.storyboard */; };
+		E69EB7AA1EC81B24001FEC62 /* TwoLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7A91EC81B24001FEC62 /* TwoLineTests.swift */; };
+		E69EB7B51EC81B24001FEC62 /* TwoLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7B41EC81B24001FEC62 /* TwoLineUITests.swift */; };
+		E69EB7D41EC829AC001FEC62 /* ダウンロードアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7CD1EC829AC001FEC62 /* ダウンロードアイコン.png */; };
+		E69EB7D51EC829AC001FEC62 /* リンクアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7CE1EC829AC001FEC62 /* リンクアイコン.png */; };
+		E69EB7D61EC829AC001FEC62 /* いいねアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7CF1EC829AC001FEC62 /* いいねアイコン.png */; };
+		E69EB7D71EC829AC001FEC62 /* その他アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7D01EC829AC001FEC62 /* その他アイコン.png */; };
+		E69EB7D81EC829AD001FEC62 /* RTアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7D11EC829AC001FEC62 /* RTアイコン.png */; };
+		E69EB7D91EC829AD001FEC62 /* リプライアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7D21EC829AC001FEC62 /* リプライアイコン.png */; };
+		E69EB7DA1EC829AD001FEC62 /* リロードアイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7D31EC829AC001FEC62 /* リロードアイコン.png */; };
+		E69EB7DE1EC82C13001FEC62 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7DD1EC82C13001FEC62 /* Setting.swift */; };
+		E69EB7E01EC83A34001FEC62 /* tweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7DF1EC83A34001FEC62 /* tweetViewController.swift */; };
+		E69EB7E71EC98695001FEC62 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7E61EC98695001FEC62 /* User.swift */; };
+		E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7E81EC98A05001FEC62 /* Tweet.swift */; };
+		E69EB7EF1EC9986C001FEC62 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7EB1EC9986C001FEC62 /* Home.png */; };
+		E69EB7F01EC9986C001FEC62 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7EC1EC9986C001FEC62 /* Search.png */; };
+		E69EB7F21EC9986C001FEC62 /* Tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7EE1EC9986C001FEC62 /* Tweet.png */; };
+		E69EB7F41EC99CB2001FEC62 /* Setting.png in Resources */ = {isa = PBXBuildFile; fileRef = E69EB7F31EC99CB2001FEC62 /* Setting.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E69EB7A61EC81B24001FEC62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E69EB7871EC81B24001FEC62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E69EB78E1EC81B24001FEC62;
+			remoteInfo = TwoLine;
+		};
+		E69EB7B11EC81B24001FEC62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E69EB7871EC81B24001FEC62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E69EB78E1EC81B24001FEC62;
+			remoteInfo = TwoLine;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E63C82A81EF0DCDB004AFBA8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../../../../Downloads/TabPageViewController-master/Sources/Info.plist"; sourceTree = "<group>"; };
+		E63C82A91EF0DCDB004AFBA8 /* TabCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabCollectionCell.swift; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabCollectionCell.swift"; sourceTree = "<group>"; };
+		E63C82AA1EF0DCDB004AFBA8 /* TabCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabCollectionCell.xib; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabCollectionCell.xib"; sourceTree = "<group>"; };
+		E63C82AB1EF0DCDB004AFBA8 /* TabPageOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabPageOption.swift; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabPageOption.swift"; sourceTree = "<group>"; };
+		E63C82AC1EF0DCDB004AFBA8 /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabPageViewController.swift; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabPageViewController.swift"; sourceTree = "<group>"; };
+		E63C82AD1EF0DCDB004AFBA8 /* TabPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabPageViewController.h; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabPageViewController.h"; sourceTree = "<group>"; };
+		E63C82AE1EF0DCDB004AFBA8 /* TabPageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TabPageViewController.storyboard; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabPageViewController.storyboard"; sourceTree = "<group>"; };
+		E63C82AF1EF0DCDB004AFBA8 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabView.swift; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabView.swift"; sourceTree = "<group>"; };
+		E63C82B01EF0DCDB004AFBA8 /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabView.xib; path = "../../../../../Downloads/TabPageViewController-master/Sources/TabView.xib"; sourceTree = "<group>"; };
+		E63C83331EFF5BF5004AFBA8 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtonTabBarController.swift; sourceTree = "<group>"; };
+		E68DD4401EDA9C3E004D505E /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
+		E68DD4421EDAAAD7004D505E /* dummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dummyViewController.swift; sourceTree = "<group>"; };
+		E68DD4461EDBD789004D505E /* HomeTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTab.swift; sourceTree = "<group>"; };
+		E69EB78F1EC81B24001FEC62 /* TwoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69EB7921EC81B24001FEC62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E69EB7941EC81B24001FEC62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E69EB7961EC81B24001FEC62 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		E69EB7991EC81B24001FEC62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E69EB79B1EC81B24001FEC62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E69EB79E1EC81B24001FEC62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E69EB7A01EC81B24001FEC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69EB7A51EC81B24001FEC62 /* TwoLineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoLineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69EB7A91EC81B24001FEC62 /* TwoLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLineTests.swift; sourceTree = "<group>"; };
+		E69EB7AB1EC81B24001FEC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69EB7B01EC81B24001FEC62 /* TwoLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwoLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E69EB7B41EC81B24001FEC62 /* TwoLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLineUITests.swift; sourceTree = "<group>"; };
+		E69EB7B61EC81B24001FEC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E69EB7CD1EC829AC001FEC62 /* ダウンロードアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ダウンロードアイコン.png"; path = "../../../../Downloads/ダウンロードアイコン.png"; sourceTree = "<group>"; };
+		E69EB7CE1EC829AC001FEC62 /* リンクアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "リンクアイコン.png"; path = "../../../../Downloads/リンクアイコン.png"; sourceTree = "<group>"; };
+		E69EB7CF1EC829AC001FEC62 /* いいねアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "いいねアイコン.png"; path = "../../../../Downloads/いいねアイコン.png"; sourceTree = "<group>"; };
+		E69EB7D01EC829AC001FEC62 /* その他アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "その他アイコン.png"; path = "../../../../Downloads/その他アイコン.png"; sourceTree = "<group>"; };
+		E69EB7D11EC829AC001FEC62 /* RTアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RTアイコン.png"; path = "../../../../Downloads/RTアイコン.png"; sourceTree = "<group>"; };
+		E69EB7D21EC829AC001FEC62 /* リプライアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "リプライアイコン.png"; path = "../../../../Downloads/リプライアイコン.png"; sourceTree = "<group>"; };
+		E69EB7D31EC829AC001FEC62 /* リロードアイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "リロードアイコン.png"; path = "../../../../Downloads/リロードアイコン.png"; sourceTree = "<group>"; };
+		E69EB7DD1EC82C13001FEC62 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		E69EB7DF1EC83A34001FEC62 /* tweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tweetViewController.swift; sourceTree = "<group>"; };
+		E69EB7E61EC98695001FEC62 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E69EB7E81EC98A05001FEC62 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		E69EB7EB1EC9986C001FEC62 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		E69EB7EC1EC9986C001FEC62 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
+		E69EB7EE1EC9986C001FEC62 /* Tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tweet.png; sourceTree = "<group>"; };
+		E69EB7F31EC99CB2001FEC62 /* Setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Setting.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E69EB78C1EC81B24001FEC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69EB7A21EC81B24001FEC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69EB7AD1EC81B24001FEC62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E63C82811EF0DB36004AFBA8 /* Sourcess */ = {
+			isa = PBXGroup;
+			children = (
+				E63C82A81EF0DCDB004AFBA8 /* Info.plist */,
+				E63C82A91EF0DCDB004AFBA8 /* TabCollectionCell.swift */,
+				E63C82AA1EF0DCDB004AFBA8 /* TabCollectionCell.xib */,
+				E63C82AB1EF0DCDB004AFBA8 /* TabPageOption.swift */,
+				E63C82AC1EF0DCDB004AFBA8 /* TabPageViewController.swift */,
+				E63C82AD1EF0DCDB004AFBA8 /* TabPageViewController.h */,
+				E63C82AE1EF0DCDB004AFBA8 /* TabPageViewController.storyboard */,
+				E63C82AF1EF0DCDB004AFBA8 /* TabView.swift */,
+				E63C82B01EF0DCDB004AFBA8 /* TabView.xib */,
+			);
+			name = Sourcess;
+			path = TwoLine;
+			sourceTree = "<group>";
+		};
+		E69EB7861EC81B24001FEC62 = {
+			isa = PBXGroup;
+			children = (
+				E69EB7EA1EC9986C001FEC62 /* TwoLine用Image */,
+				E69EB7C21EC81C2A001FEC62 /* Image */,
+				E69EB7E51EC98656001FEC62 /* Model */,
+				E69EB7911EC81B24001FEC62 /* TwoLine */,
+				E63C82811EF0DB36004AFBA8 /* Sourcess */,
+				E69EB7A81EC81B24001FEC62 /* TwoLineTests */,
+				E69EB7B31EC81B24001FEC62 /* TwoLineUITests */,
+				E69EB7901EC81B24001FEC62 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E69EB7901EC81B24001FEC62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E69EB78F1EC81B24001FEC62 /* TwoLine.app */,
+				E69EB7A51EC81B24001FEC62 /* TwoLineTests.xctest */,
+				E69EB7B01EC81B24001FEC62 /* TwoLineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E69EB7911EC81B24001FEC62 /* TwoLine */ = {
+			isa = PBXGroup;
+			children = (
+				E69EB7921EC81B24001FEC62 /* AppDelegate.swift */,
+				E69EB7941EC81B24001FEC62 /* HomeViewController.swift */,
+				E69EB7961EC81B24001FEC62 /* SearchViewController.swift */,
+				E69EB7DF1EC83A34001FEC62 /* tweetViewController.swift */,
+				E68DD4421EDAAAD7004D505E /* dummyViewController.swift */,
+				E69EB7DD1EC82C13001FEC62 /* Setting.swift */,
+				E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */,
+				E63C83331EFF5BF5004AFBA8 /* TopView.swift */,
+				E68DD4461EDBD789004D505E /* HomeTab.swift */,
+				E69EB7981EC81B24001FEC62 /* Main.storyboard */,
+				E69EB79B1EC81B24001FEC62 /* Assets.xcassets */,
+				E69EB79D1EC81B24001FEC62 /* LaunchScreen.storyboard */,
+				E69EB7A01EC81B24001FEC62 /* Info.plist */,
+			);
+			path = TwoLine;
+			sourceTree = "<group>";
+		};
+		E69EB7A81EC81B24001FEC62 /* TwoLineTests */ = {
+			isa = PBXGroup;
+			children = (
+				E69EB7A91EC81B24001FEC62 /* TwoLineTests.swift */,
+				E69EB7AB1EC81B24001FEC62 /* Info.plist */,
+			);
+			path = TwoLineTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		E69EB7B31EC81B24001FEC62 /* TwoLineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E69EB7B41EC81B24001FEC62 /* TwoLineUITests.swift */,
+				E69EB7B61EC81B24001FEC62 /* Info.plist */,
+			);
+			path = TwoLineUITests;
+			sourceTree = "<group>";
+		};
+		E69EB7C21EC81C2A001FEC62 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				E69EB7CD1EC829AC001FEC62 /* ダウンロードアイコン.png */,
+				E69EB7CE1EC829AC001FEC62 /* リンクアイコン.png */,
+				E69EB7CF1EC829AC001FEC62 /* いいねアイコン.png */,
+				E69EB7D01EC829AC001FEC62 /* その他アイコン.png */,
+				E69EB7D11EC829AC001FEC62 /* RTアイコン.png */,
+				E69EB7D21EC829AC001FEC62 /* リプライアイコン.png */,
+				E69EB7D31EC829AC001FEC62 /* リロードアイコン.png */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		E69EB7E51EC98656001FEC62 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E69EB7E61EC98695001FEC62 /* User.swift */,
+				E69EB7E81EC98A05001FEC62 /* Tweet.swift */,
+			);
+			name = Model;
+			path = TwoLine;
+			sourceTree = "<group>";
+		};
+		E69EB7EA1EC9986C001FEC62 /* TwoLine用Image */ = {
+			isa = PBXGroup;
+			children = (
+				E69EB7EB1EC9986C001FEC62 /* Home.png */,
+				E69EB7EC1EC9986C001FEC62 /* Search.png */,
+				E69EB7EE1EC9986C001FEC62 /* Tweet.png */,
+				E69EB7F31EC99CB2001FEC62 /* Setting.png */,
+				E68DD4401EDA9C3E004D505E /* reload.png */,
+			);
+			name = "TwoLine用Image";
+			path = "../../../TwoLine用Image";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E69EB78E1EC81B24001FEC62 /* TwoLine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E69EB7B91EC81B24001FEC62 /* Build configuration list for PBXNativeTarget "TwoLine" */;
+			buildPhases = (
+				E69EB78B1EC81B24001FEC62 /* Sources */,
+				E69EB78C1EC81B24001FEC62 /* Frameworks */,
+				E69EB78D1EC81B24001FEC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwoLine;
+			productName = TwoLine;
+			productReference = E69EB78F1EC81B24001FEC62 /* TwoLine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E69EB7A41EC81B24001FEC62 /* TwoLineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E69EB7BC1EC81B24001FEC62 /* Build configuration list for PBXNativeTarget "TwoLineTests" */;
+			buildPhases = (
+				E69EB7A11EC81B24001FEC62 /* Sources */,
+				E69EB7A21EC81B24001FEC62 /* Frameworks */,
+				E69EB7A31EC81B24001FEC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E69EB7A71EC81B24001FEC62 /* PBXTargetDependency */,
+			);
+			name = TwoLineTests;
+			productName = TwoLineTests;
+			productReference = E69EB7A51EC81B24001FEC62 /* TwoLineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E69EB7AF1EC81B24001FEC62 /* TwoLineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E69EB7BF1EC81B24001FEC62 /* Build configuration list for PBXNativeTarget "TwoLineUITests" */;
+			buildPhases = (
+				E69EB7AC1EC81B24001FEC62 /* Sources */,
+				E69EB7AD1EC81B24001FEC62 /* Frameworks */,
+				E69EB7AE1EC81B24001FEC62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E69EB7B21EC81B24001FEC62 /* PBXTargetDependency */,
+			);
+			name = TwoLineUITests;
+			productName = TwoLineUITests;
+			productReference = E69EB7B01EC81B24001FEC62 /* TwoLineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E69EB7871EC81B24001FEC62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "麻生昌志";
+				TargetAttributes = {
+					E69EB78E1EC81B24001FEC62 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GLQ4RHPUQV;
+						ProvisioningStyle = Automatic;
+					};
+					E69EB7A41EC81B24001FEC62 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GLQ4RHPUQV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E69EB78E1EC81B24001FEC62;
+					};
+					E69EB7AF1EC81B24001FEC62 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = GLQ4RHPUQV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E69EB78E1EC81B24001FEC62;
+					};
+				};
+			};
+			buildConfigurationList = E69EB78A1EC81B24001FEC62 /* Build configuration list for PBXProject "TwoLine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E69EB7861EC81B24001FEC62;
+			productRefGroup = E69EB7901EC81B24001FEC62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E69EB78E1EC81B24001FEC62 /* TwoLine */,
+				E69EB7A41EC81B24001FEC62 /* TwoLineTests */,
+				E69EB7AF1EC81B24001FEC62 /* TwoLineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E69EB78D1EC81B24001FEC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69EB7DA1EC829AD001FEC62 /* リロードアイコン.png in Resources */,
+				E69EB7D91EC829AD001FEC62 /* リプライアイコン.png in Resources */,
+				E69EB79F1EC81B24001FEC62 /* LaunchScreen.storyboard in Resources */,
+				E69EB7D41EC829AC001FEC62 /* ダウンロードアイコン.png in Resources */,
+				E68DD4411EDA9C3E004D505E /* reload.png in Resources */,
+				E69EB7EF1EC9986C001FEC62 /* Home.png in Resources */,
+				E63C82B91EF0DCDB004AFBA8 /* TabView.xib in Resources */,
+				E63C82B21EF0DCDB004AFBA8 /* Info.plist in Resources */,
+				E69EB79C1EC81B24001FEC62 /* Assets.xcassets in Resources */,
+				E69EB7D81EC829AD001FEC62 /* RTアイコン.png in Resources */,
+				E69EB7F01EC9986C001FEC62 /* Search.png in Resources */,
+				E69EB79A1EC81B24001FEC62 /* Main.storyboard in Resources */,
+				E63C82B71EF0DCDB004AFBA8 /* TabPageViewController.storyboard in Resources */,
+				E69EB7D51EC829AC001FEC62 /* リンクアイコン.png in Resources */,
+				E69EB7F21EC9986C001FEC62 /* Tweet.png in Resources */,
+				E69EB7D71EC829AC001FEC62 /* その他アイコン.png in Resources */,
+				E63C82B41EF0DCDB004AFBA8 /* TabCollectionCell.xib in Resources */,
+				E69EB7F41EC99CB2001FEC62 /* Setting.png in Resources */,
+				E69EB7D61EC829AC001FEC62 /* いいねアイコン.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69EB7A31EC81B24001FEC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69EB7AE1EC81B24001FEC62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E69EB78B1EC81B24001FEC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69EB7DE1EC82C13001FEC62 /* Setting.swift in Sources */,
+				E63C83341EFF5BF5004AFBA8 /* TopView.swift in Sources */,
+				E63C82B51EF0DCDB004AFBA8 /* TabPageOption.swift in Sources */,
+				E69EB7E01EC83A34001FEC62 /* tweetViewController.swift in Sources */,
+				E63C82B31EF0DCDB004AFBA8 /* TabCollectionCell.swift in Sources */,
+				E63C82B61EF0DCDB004AFBA8 /* TabPageViewController.swift in Sources */,
+				E69EB7E71EC98695001FEC62 /* User.swift in Sources */,
+				E68DD4431EDAAAD7004D505E /* dummyViewController.swift in Sources */,
+				E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */,
+				E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */,
+				E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */,
+				E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */,
+				E69EB7951EC81B24001FEC62 /* HomeViewController.swift in Sources */,
+				E68DD4471EDBD789004D505E /* HomeTab.swift in Sources */,
+				E63C82B81EF0DCDB004AFBA8 /* TabView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69EB7A11EC81B24001FEC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69EB7AA1EC81B24001FEC62 /* TwoLineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E69EB7AC1EC81B24001FEC62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69EB7B51EC81B24001FEC62 /* TwoLineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E69EB7A71EC81B24001FEC62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E69EB78E1EC81B24001FEC62 /* TwoLine */;
+			targetProxy = E69EB7A61EC81B24001FEC62 /* PBXContainerItemProxy */;
+		};
+		E69EB7B21EC81B24001FEC62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E69EB78E1EC81B24001FEC62 /* TwoLine */;
+			targetProxy = E69EB7B11EC81B24001FEC62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E69EB7981EC81B24001FEC62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E69EB7991EC81B24001FEC62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E69EB79D1EC81B24001FEC62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E69EB79E1EC81B24001FEC62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E69EB7B71EC81B24001FEC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E69EB7B81EC81B24001FEC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E69EB7BA1EC81B24001FEC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GLQ4RHPUQV;
+				INFOPLIST_FILE = TwoLine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E69EB7BB1EC81B24001FEC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GLQ4RHPUQV;
+				INFOPLIST_FILE = TwoLine/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E69EB7BD1EC81B24001FEC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GLQ4RHPUQV;
+				INFOPLIST_FILE = TwoLineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwoLine.app/TwoLine";
+			};
+			name = Debug;
+		};
+		E69EB7BE1EC81B24001FEC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GLQ4RHPUQV;
+				INFOPLIST_FILE = TwoLineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwoLine.app/TwoLine";
+			};
+			name = Release;
+		};
+		E69EB7C01EC81B24001FEC62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GLQ4RHPUQV;
+				INFOPLIST_FILE = TwoLineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TwoLine;
+			};
+			name = Debug;
+		};
+		E69EB7C11EC81B24001FEC62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GLQ4RHPUQV;
+				INFOPLIST_FILE = TwoLineUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TwoLine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E69EB78A1EC81B24001FEC62 /* Build configuration list for PBXProject "TwoLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69EB7B71EC81B24001FEC62 /* Debug */,
+				E69EB7B81EC81B24001FEC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E69EB7B91EC81B24001FEC62 /* Build configuration list for PBXNativeTarget "TwoLine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69EB7BA1EC81B24001FEC62 /* Debug */,
+				E69EB7BB1EC81B24001FEC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E69EB7BC1EC81B24001FEC62 /* Build configuration list for PBXNativeTarget "TwoLineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69EB7BD1EC81B24001FEC62 /* Debug */,
+				E69EB7BE1EC81B24001FEC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E69EB7BF1EC81B24001FEC62 /* Build configuration list for PBXNativeTarget "TwoLineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E69EB7C01EC81B24001FEC62 /* Debug */,
+				E69EB7C11EC81B24001FEC62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E69EB7871EC81B24001FEC62 /* Project object */;
+}
