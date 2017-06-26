@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageTableViewController: UIViewController {
+class PageTableViewController: UITableViewController {
     
     static func create() -> PageTableViewController {
         let sb = UIStoryboard(name: "PageTableViewController", bundle: Bundle(for: PageTableViewController.self))
