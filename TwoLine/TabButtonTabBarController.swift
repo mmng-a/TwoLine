@@ -24,8 +24,8 @@ class TabButtonTabBarController: UITabBarController {
     func setupHomeTab() {
         
         let pageVC = TabPageViewController.create()
-        let vc1 = UIViewController()
-        let vc2 = UIViewController()
+        let vc1 = SampleViewController.create()
+        let vc2 = PageTableViewController.create()
         pageVC.tabItems = [(vc1, "Home"), (vc2, "Notice")]
         pageVC.tabBarItem.image = UIImage(named: "Home.png")
         self.viewControllers?.insert(pageVC, at: 0)
