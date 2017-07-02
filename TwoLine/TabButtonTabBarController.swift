@@ -8,6 +8,13 @@
 
 import UIKit
 
+public extension UIColor {
+    static let systemDefaultTintBlue = UIColor(red: 21.0/255.0, green: 126.0/255.0, blue: 251.0/255.0, alpha: 1.0)
+    static let systemDefaultTintGray = UIColor(red: 146.0/255.0, green: 146.0/255.0, blue: 146.0/255.0, alpha: 1.0)
+    static let currentColor = UIColor(red: 105/255, green: 182/255, blue: 245/255, alpha: 1.0)
+}
+
+
 class TabButtonTabBarController: UITabBarController {
     
     override func viewDidLoad() {
@@ -24,8 +31,8 @@ class TabButtonTabBarController: UITabBarController {
     func setupHomeTab() {
         
         let pageVC = TabPageViewController.create()
-        let vc1 = PageTableViewController.create()
-        let vc2 = PageTableViewController.create()
+        let vc1 = UIViewController()
+        let vc2 = UIViewController()
         pageVC.tabItems = [(vc1, "Home"), (vc2, "Notice")]
         pageVC.tabBarItem.image = UIImage(named: "Home.png")
         self.viewControllers?.insert(pageVC, at: 0)
@@ -36,12 +43,29 @@ class TabButtonTabBarController: UITabBarController {
     
     private func setupTabButton(){
         let tabButton = UIButton(type: .custom)
-        tabButton.setBackgroundImage(UIImage(named: "reload") , for: .normal)   // TODO:画像の用意
+        let reloadImage = UIImage(named: "reload.png")?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        tabButton.setImage(reloadImage, for: UIControlState.normal)
+        tabButton.tintColor = UIColor.systemDefaultTintGray
         tabButton.sizeToFit()
-        tabButton.center = CGPoint(x: tabBar.bounds.size.width * 0.7 , y: tabBar.bounds.size.height - (tabBar.bounds.size.height / 2))
+        tabButton.center = CGPoint(x: tabBar.bounds.size.width * 0.7, y: tabBar.bounds.size.height / 2)
         tabButton.addTarget(self, action: #selector(TabButtonTabBarController.test), for: .touchUpInside)
         tabBar.addSubview(tabButton)
+        
+        //tabButtonのしたのlabel
+//        let tabButtonLabel = UILabel()
+//        tabButtonLabel.text = "reload"
+//        tabButtonLabel.sizeToFit()
+//        tabButtonLabel.center = CGPoint(x: tabBar.bounds.size.width * 0.7, y: tabBar.bounds.size.height / 6 * 5)
+//        
+//        tabBar.addSubview(tabButtonLabel)
     }
+    
+//    private func setupTabButtonLabel(){
+//        let TabButtonLabel = UILabel
+//        TabButtonLabel.sizeToFit()
+//        TabButtonLabel.drawText(in rect: (x: ))
+//        
+//    }
     
     func test() {
         print("push TabButton")

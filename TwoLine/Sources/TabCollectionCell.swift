@@ -31,7 +31,7 @@ class TabCollectionCell: UICollectionViewCell {
             } else {
                 unHighlightTitle()
             }
-            currentBarView.backgroundColor = option.currentColor
+            currentBarView.backgroundColor = UIColor.currentColor
             layoutIfNeeded()
         }
     }
@@ -84,7 +84,7 @@ extension TabCollectionCell {
     }
 
     func highlightTitle() {
-        itemLabel.textColor = option.currentColor
+        itemLabel.textColor = UIColor.currentColor
         itemLabel.font = UIFont.boldSystemFont(ofSize: option.fontSize)
     }
 

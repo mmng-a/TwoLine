@@ -21,8 +21,8 @@
 		E631B2B71EFF88E0008A8A91 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631B2AF1EFF88E0008A8A91 /* TabView.swift */; };
 		E631B2B81EFF88E0008A8A91 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631B2B01EFF88E0008A8A91 /* TabView.xib */; };
 		E63C83341EFF5BF5004AFBA8 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C83331EFF5BF5004AFBA8 /* TopView.swift */; };
-		E64549801F00A13900B39016 /* PageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645497F1F00A13900B39016 /* PageTableViewController.swift */; };
-		E64549821F00A15000B39016 /* PageTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64549811F00A15000B39016 /* PageTableViewController.storyboard */; };
+		E64549861F035CC100B39016 /* PageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64549851F035CC100B39016 /* PageTableViewController.swift */; };
+		E64549881F035CFE00B39016 /* PageTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64549871F035CFE00B39016 /* PageTableViewController.storyboard */; };
 		E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */; };
 		E68DD4431EDAAAD7004D505E /* dummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD4421EDAAAD7004D505E /* dummyViewController.swift */; };
 		E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7921EC81B24001FEC62 /* AppDelegate.swift */; };
@@ -72,8 +72,8 @@
 		E631B2AF1EFF88E0008A8A91 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		E631B2B01EFF88E0008A8A91 /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
 		E63C83331EFF5BF5004AFBA8 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
-		E645497F1F00A13900B39016 /* PageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTableViewController.swift; sourceTree = "<group>"; };
-		E64549811F00A15000B39016 /* PageTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageTableViewController.storyboard; sourceTree = "<group>"; };
+		E64549851F035CC100B39016 /* PageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageTableViewController.swift; path = ../PageTableViewController.swift; sourceTree = "<group>"; };
+		E64549871F035CFE00B39016 /* PageTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageTableViewController.storyboard; sourceTree = "<group>"; };
 		E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtonTabBarController.swift; sourceTree = "<group>"; };
 		E68DD4421EDAAAD7004D505E /* dummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dummyViewController.swift; sourceTree = "<group>"; };
 		E69EB78F1EC81B24001FEC62 /* TwoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,8 +183,8 @@
 				E68DD4421EDAAAD7004D505E /* dummyViewController.swift */,
 				E69EB7DD1EC82C13001FEC62 /* Setting.swift */,
 				E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */,
-				E64549811F00A15000B39016 /* PageTableViewController.storyboard */,
-				E645497F1F00A13900B39016 /* PageTableViewController.swift */,
+				E64549851F035CC100B39016 /* PageTableViewController.swift */,
+				E64549871F035CFE00B39016 /* PageTableViewController.storyboard */,
 				E63C83331EFF5BF5004AFBA8 /* TopView.swift */,
 				E69EB7981EC81B24001FEC62 /* Main.storyboard */,
 				E69EB79B1EC81B24001FEC62 /* Assets.xcassets */,
@@ -334,11 +334,11 @@
 			files = (
 				E631B2A21EFF886D008A8A91 /* Home.png in Resources */,
 				E631B2B31EFF88E0008A8A91 /* TabCollectionCell.xib in Resources */,
+				E64549881F035CFE00B39016 /* PageTableViewController.storyboard in Resources */,
 				E631B2B81EFF88E0008A8A91 /* TabView.xib in Resources */,
 				E631B2A41EFF886D008A8A91 /* Search.png in Resources */,
 				E631B2B51EFF88E0008A8A91 /* TabPageViewController.storyboard in Resources */,
 				E631B2B11EFF88E0008A8A91 /* Info.plist in Resources */,
-				E64549821F00A15000B39016 /* PageTableViewController.storyboard in Resources */,
 				E69EB79F1EC81B24001FEC62 /* LaunchScreen.storyboard in Resources */,
 				E69EB79C1EC81B24001FEC62 /* Assets.xcassets in Resources */,
 				E69EB79A1EC81B24001FEC62 /* Main.storyboard in Resources */,
@@ -377,10 +377,10 @@
 				E69EB7E71EC98695001FEC62 /* User.swift in Sources */,
 				E68DD4431EDAAAD7004D505E /* dummyViewController.swift in Sources */,
 				E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */,
+				E64549861F035CC100B39016 /* PageTableViewController.swift in Sources */,
 				E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */,
 				E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */,
 				E631B2B71EFF88E0008A8A91 /* TabView.swift in Sources */,
-				E64549801F00A13900B39016 /* PageTableViewController.swift in Sources */,
 				E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */,
 				E631B2B61EFF88E0008A8A91 /* TabPageViewController.swift in Sources */,
 				E69EB7951EC81B24001FEC62 /* HomeViewController.swift in Sources */,
