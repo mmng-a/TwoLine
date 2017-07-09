@@ -18,4 +18,11 @@ struct Tweet {
     //Tweetのユーザー
     let user: User
     
+    
+    init (id: String, text: String, user: User) {
+        
+        self.id = id
+        self.text = text
+        self.user = user
+    }
 }

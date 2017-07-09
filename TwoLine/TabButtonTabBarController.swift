@@ -31,8 +31,8 @@ class TabButtonTabBarController: UITabBarController {
     func setupHomeTab() {
         
         let pageVC = TabPageViewController.create()
-        let vc1 = UIViewController()
-        let vc2 = UIViewController()
+        let vc1 = PageTableViewController.create()
+        let vc2 = PageTableViewController.create()
         pageVC.tabItems = [(vc1, "Home"), (vc2, "Notice")]
         pageVC.tabBarItem.image = UIImage(named: "Home.png")
         self.viewControllers?.insert(pageVC, at: 0)
@@ -48,7 +48,7 @@ class TabButtonTabBarController: UITabBarController {
         tabButton.tintColor = UIColor.systemDefaultTintGray
         tabButton.sizeToFit()
         tabButton.center = CGPoint(x: tabBar.bounds.size.width * 0.7, y: tabBar.bounds.size.height / 2)
-        tabButton.addTarget(self, action: #selector(TabButtonTabBarController.test), for: .touchUpInside)
+        tabButton.addTarget(self, action: #selector(TabButtonTabBarController.tapButton), for: .touchUpInside)
         tabBar.addSubview(tabButton)
         
         //tabButtonのしたのlabel
@@ -67,8 +67,8 @@ class TabButtonTabBarController: UITabBarController {
 //        
 //    }
     
-    func test() {
-        print("push TabButton")
+    func tapButton() {
+        print("Tap TabButton")
     }
     
     

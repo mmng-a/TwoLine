@@ -10,12 +10,22 @@ import UIKit
 
 class PageTableViewController: UITableViewController {
     
+    var testUsers: [User] = [
+        User(id: "0", screenName: "testMan0", name: "テストマン0", profileImageURL: ""),
+        User(id: "1", screenName: "testMan1", name: "テストマン1", profileImageURL: "")
+    ]
+    var testTweets: [Tweet]!
     
     static func create() -> PageTableViewController {
         let sb = UIStoryboard(name: "PageTableViewController", bundle: Bundle(for: PageTableViewController.self))
         return sb.instantiateInitialViewController() as! PageTableViewController
     }
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "tweet") as! PageTweetTableViewCell
+        cell.setCell(tweet: testTweets[0])
+        return cell
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +35,11 @@ class PageTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        testTweets = [
+            Tweet(id: "0", text: "テスト0", user: testUsers[0]),
+            Tweet(id: "1", text: "テスト1", user: testUsers[1])
+        ]
     }
 
     override func didReceiveMemoryWarning() {
