@@ -1,20 +1,19 @@
 //
-//  dummyViewController.swift
+//  BeginViewController.swift
 //  TwoLine
 //
-//  Created by 麻生昌志 on 2017/05/28.
+//  Created by 麻生昌志 on 2017/07/12.
 //  Copyright © 2017年 麻生昌志. All rights reserved.
 //
 
 import UIKit
 
-class dummyViewController: UITabBarController {
+class BeginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
     }
 
     override func didReceiveMemoryWarning() {

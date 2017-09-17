@@ -10,11 +10,11 @@ import UIKit
 
 class PageTweetTableViewCell: UITableViewCell {
     
-    @IBOutlet var userName: UILabel!
-    @IBOutlet var usetrProfileImage: UIImageView!
-    @IBOutlet var userScreenNme: UILabel!
-    @IBOutlet var tweetText: UILabel!
-    @IBOutlet var tweetTime: UILabel!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userProfileImage: UIButton!
+    @IBOutlet weak var userScreenNme: UILabel!
+    @IBOutlet weak var tweetText: UILabel!
+    @IBOutlet weak var tweetTime: UILabel!
     
     
 
@@ -31,9 +31,22 @@ class PageTweetTableViewCell: UITableViewCell {
     
     func setCell(tweet: Tweet) {
         self.userName.text = tweet.user.name
-        
-        self.userScreenNme.text = tweet.user.screenName
+        /*let downloadTask = URLSession.shared.dataTask(with: URL(string: tweet.user.profileImageURL)!) { [weak self] data, response, error in
+         if let error = error {
+         print(error)
+         return
+         }
+         
+         DispatchQueue.main.async {
+         // iconImageViewにダウンロードしてきた画像を代入する処理
+         self?.userProfileImage.image = UIImage(data: data!)
+         }
+         }
+         downloadTask.resume()       */self.userProfileImage.setBackgroundImage(UIImage(named: tweet.user.profileImageURL), for: .normal)
+        self.userScreenNme.text = "@" + tweet.user.screenName
+        self.userName.text = tweet.user.name
         self.tweetText.text = tweet.text
+        self.tweetTime.text = "0"
     }
 
 }

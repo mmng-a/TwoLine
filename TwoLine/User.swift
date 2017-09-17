@@ -22,7 +22,13 @@ struct User {
     let profileImageURL: String
     
     
-    init(id: String, screenName:String, name: String, profileImageURL: String) {
+    init?(json: Any) {
+        guard let dictionary = json as? [String: Any] else { return nil }
+        
+        guard let id = dictionary["id_str"] as? String else { return nil }
+        guard let screenName = dictionary["screen_name"] as? String else { return nil }
+        guard let name = dictionary["name"] as? String else { return nil }
+        guard let profileImageURL = dictionary["profile_image_url_https"] as? String else { return nil }
         
         self.id = id
         self.screenName = screenName

@@ -8,19 +8,21 @@
 
 import UIKit
 
-public extension UIColor {
-    static let systemDefaultTintBlue = UIColor(red: 21.0/255.0, green: 126.0/255.0, blue: 251.0/255.0, alpha: 1.0)
-    static let systemDefaultTintGray = UIColor(red: 146.0/255.0, green: 146.0/255.0, blue: 146.0/255.0, alpha: 1.0)
-    static let currentColor = UIColor(red: 105/255, green: 182/255, blue: 245/255, alpha: 1.0)
-}
-
 
 class TabButtonTabBarController: UITabBarController {
     
+    func gobackBegin() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupTabButton()
         setupHomeTab()
+        tabBar.bounds.size.height = tabBar.bounds.size.height * 0.5     //0.5~0.7
+        setupTabButton()
+        setupTweetButton()
+        
+        //gobackBegin()
         
     }
     
@@ -35,6 +37,7 @@ class TabButtonTabBarController: UITabBarController {
         let vc2 = PageTableViewController.create()
         pageVC.tabItems = [(vc1, "Home"), (vc2, "Notice")]
         pageVC.tabBarItem.image = UIImage(named: "Home.png")
+        
         self.viewControllers?.insert(pageVC, at: 0)
         if pageVC.tabItems.count >= 3 {
             pageVC.isInfinity = true
@@ -43,32 +46,37 @@ class TabButtonTabBarController: UITabBarController {
     
     private func setupTabButton(){
         let tabButton = UIButton(type: .custom)
-        let reloadImage = UIImage(named: "reload.png")?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
-        tabButton.setImage(reloadImage, for: UIControlState.normal)
+        let AddImage = UIImage(named: "Add.png")?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        tabButton.setImage(AddImage, for: UIControlState.normal)
         tabButton.tintColor = UIColor.systemDefaultTintGray
         tabButton.sizeToFit()
-        tabButton.center = CGPoint(x: tabBar.bounds.size.width * 0.7, y: tabBar.bounds.size.height / 2)
-        tabButton.addTarget(self, action: #selector(TabButtonTabBarController.tapButton), for: .touchUpInside)
+        tabButton.bounds.size.width = tabBar.bounds.size.width * 0.2 + 2
+        tabButton.bounds.size.height = tabBar.bounds.size.height
+        tabButton.center = CGPoint(x: tabBar.bounds.size.width * 0.7, y: tabBar.bounds.size.height * 0.5)
+        tabButton.addTarget(self, action: #selector(TabButtonTabBarController.tapTabButton), for: .touchUpInside)
         tabBar.addSubview(tabButton)
-        
-        //tabButtonのしたのlabel
-//        let tabButtonLabel = UILabel()
-//        tabButtonLabel.text = "reload"
-//        tabButtonLabel.sizeToFit()
-//        tabButtonLabel.center = CGPoint(x: tabBar.bounds.size.width * 0.7, y: tabBar.bounds.size.height / 6 * 5)
-//        
-//        tabBar.addSubview(tabButtonLabel)
     }
     
-//    private func setupTabButtonLabel(){
-//        let TabButtonLabel = UILabel
-//        TabButtonLabel.sizeToFit()
-//        TabButtonLabel.drawText(in rect: (x: ))
-//        
-//    }
+    private func setupTweetButton(){
+        let tweetButton = UIButton(type: .custom)
+        let tweetImage = UIImage(named: "Tweet.png")?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        tweetButton.setImage(tweetImage, for: UIControlState.normal)
+        tweetButton.backgroundColor = UIColor.currentColor
+        tweetButton.tintColor = UIColor.white
+        tweetButton.sizeToFit()
+        tweetButton.bounds.size.width = tabBar.bounds.size.width * 0.2 + 2
+        tweetButton.bounds.size.height = tabBar.bounds.size.height
+        tweetButton.center = CGPoint(x: tabBar.bounds.size.width * 0.5, y: tabBar.bounds.size.height * 0.5)
+        tweetButton.addTarget(self, action: #selector(TabButtonTabBarController.tapTweetButton), for: .touchUpInside)
+        tabBar.addSubview(tweetButton)
+    }
     
-    func tapButton() {
+    func tapTabButton() {
         print("Tap TabButton")
+    }
+    
+    func tapTweetButton() {
+        print("Tap TweetButon")
     }
     
     

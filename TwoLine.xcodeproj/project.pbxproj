@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E609E3351F1B9B31006920B0 /* IMG_0562.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E609E3331F1B9B31006920B0 /* IMG_0562.jpg */; };
+		E609E3361F1B9B31006920B0 /* IMG_5624.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E609E3341F1B9B31006920B0 /* IMG_5624.jpg */; };
 		E631B2A21EFF886D008A8A91 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29D1EFF886D008A8A91 /* Home.png */; };
 		E631B2A31EFF886D008A8A91 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29E1EFF886D008A8A91 /* reload.png */; };
 		E631B2A41EFF886D008A8A91 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29F1EFF886D008A8A91 /* Search.png */; };
@@ -20,12 +22,11 @@
 		E631B2B61EFF88E0008A8A91 /* TabPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631B2AE1EFF88E0008A8A91 /* TabPageViewController.swift */; };
 		E631B2B71EFF88E0008A8A91 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E631B2AF1EFF88E0008A8A91 /* TabView.swift */; };
 		E631B2B81EFF88E0008A8A91 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E631B2B01EFF88E0008A8A91 /* TabView.xib */; };
-		E63C83341EFF5BF5004AFBA8 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63C83331EFF5BF5004AFBA8 /* TopView.swift */; };
 		E64549861F035CC100B39016 /* PageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64549851F035CC100B39016 /* PageTableViewController.swift */; };
 		E64549881F035CFE00B39016 /* PageTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64549871F035CFE00B39016 /* PageTableViewController.storyboard */; };
+		E65D4F781F2E09940042AF5C /* Add.png in Resources */ = {isa = PBXBuildFile; fileRef = E65D4F771F2E09940042AF5C /* Add.png */; };
 		E68358391F11F18B00388BF8 /* PageTweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */; };
 		E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */; };
-		E68DD4431EDAAAD7004D505E /* dummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD4421EDAAAD7004D505E /* dummyViewController.swift */; };
 		E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7921EC81B24001FEC62 /* AppDelegate.swift */; };
 		E69EB7951EC81B24001FEC62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7941EC81B24001FEC62 /* HomeViewController.swift */; };
 		E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7961EC81B24001FEC62 /* SearchViewController.swift */; };
@@ -35,9 +36,15 @@
 		E69EB7AA1EC81B24001FEC62 /* TwoLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7A91EC81B24001FEC62 /* TwoLineTests.swift */; };
 		E69EB7B51EC81B24001FEC62 /* TwoLineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7B41EC81B24001FEC62 /* TwoLineUITests.swift */; };
 		E69EB7DE1EC82C13001FEC62 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7DD1EC82C13001FEC62 /* Setting.swift */; };
-		E69EB7E01EC83A34001FEC62 /* tweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7DF1EC83A34001FEC62 /* tweetViewController.swift */; };
 		E69EB7E71EC98695001FEC62 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7E61EC98695001FEC62 /* User.swift */; };
 		E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7E81EC98A05001FEC62 /* Tweet.swift */; };
+		E6C026951F16511100D93C88 /* AddUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C026941F16511100D93C88 /* AddUIColor.swift */; };
+		E6C026971F165A3F00D93C88 /* BeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C026961F165A3F00D93C88 /* BeginViewController.swift */; };
+		E6E413601F6E150C0072ACF4 /* TwitterCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E4135F1F6E150C0072ACF4 /* TwitterCommunicator.swift */; };
+		E6E413621F6E16DE0072ACF4 /* TimelineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E413611F6E16DE0072ACF4 /* TimelineParser.swift */; };
+		E6E413641F6E22B50072ACF4 /* PostTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */; };
+		E6F8AB0A1F15F73A004CFD7A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8AB091F15F73A004CFD7A /* Account.swift */; };
+		E6F8AB0C1F16485D004CFD7A /* LoginCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F8AB0B1F16485D004CFD7A /* LoginCommunicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E609E3331F1B9B31006920B0 /* IMG_0562.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0562.jpg; sourceTree = "<group>"; };
+		E609E3341F1B9B31006920B0 /* IMG_5624.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5624.jpg; sourceTree = "<group>"; };
 		E631B29D1EFF886D008A8A91 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		E631B29E1EFF886D008A8A91 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
 		E631B29F1EFF886D008A8A91 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
@@ -72,12 +81,11 @@
 		E631B2AE1EFF88E0008A8A91 /* TabPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPageViewController.swift; sourceTree = "<group>"; };
 		E631B2AF1EFF88E0008A8A91 /* TabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		E631B2B01EFF88E0008A8A91 /* TabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
-		E63C83331EFF5BF5004AFBA8 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		E64549851F035CC100B39016 /* PageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageTableViewController.swift; path = ../PageTableViewController.swift; sourceTree = "<group>"; };
 		E64549871F035CFE00B39016 /* PageTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageTableViewController.storyboard; sourceTree = "<group>"; };
+		E65D4F771F2E09940042AF5C /* Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add.png; sourceTree = "<group>"; };
 		E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTweetTableViewCell.swift; sourceTree = "<group>"; };
 		E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtonTabBarController.swift; sourceTree = "<group>"; };
-		E68DD4421EDAAAD7004D505E /* dummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dummyViewController.swift; sourceTree = "<group>"; };
 		E69EB78F1EC81B24001FEC62 /* TwoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E69EB7921EC81B24001FEC62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E69EB7941EC81B24001FEC62 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -93,9 +101,15 @@
 		E69EB7B41EC81B24001FEC62 /* TwoLineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLineUITests.swift; sourceTree = "<group>"; };
 		E69EB7B61EC81B24001FEC62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E69EB7DD1EC82C13001FEC62 /* Setting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
-		E69EB7DF1EC83A34001FEC62 /* tweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tweetViewController.swift; sourceTree = "<group>"; };
 		E69EB7E61EC98695001FEC62 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E69EB7E81EC98A05001FEC62 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		E6C026941F16511100D93C88 /* AddUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUIColor.swift; sourceTree = "<group>"; };
+		E6C026961F165A3F00D93C88 /* BeginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeginViewController.swift; sourceTree = "<group>"; };
+		E6E4135F1F6E150C0072ACF4 /* TwitterCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterCommunicator.swift; sourceTree = "<group>"; };
+		E6E413611F6E16DE0072ACF4 /* TimelineParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineParser.swift; sourceTree = "<group>"; };
+		E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTweetViewController.swift; sourceTree = "<group>"; };
+		E6F8AB091F15F73A004CFD7A /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		E6F8AB0B1F16485D004CFD7A /* LoginCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCommunicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +145,9 @@
 				E631B29F1EFF886D008A8A91 /* Search.png */,
 				E631B2A01EFF886D008A8A91 /* Setting.png */,
 				E631B2A11EFF886D008A8A91 /* Tweet.png */,
+				E65D4F771F2E09940042AF5C /* Add.png */,
+				E609E3331F1B9B31006920B0 /* IMG_0562.jpg */,
+				E609E3341F1B9B31006920B0 /* IMG_5624.jpg */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -180,19 +197,22 @@
 			children = (
 				E69EB7921EC81B24001FEC62 /* AppDelegate.swift */,
 				E69EB7941EC81B24001FEC62 /* HomeViewController.swift */,
+				E6E4135F1F6E150C0072ACF4 /* TwitterCommunicator.swift */,
 				E69EB7961EC81B24001FEC62 /* SearchViewController.swift */,
-				E69EB7DF1EC83A34001FEC62 /* tweetViewController.swift */,
-				E68DD4421EDAAAD7004D505E /* dummyViewController.swift */,
 				E69EB7DD1EC82C13001FEC62 /* Setting.swift */,
 				E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */,
 				E64549851F035CC100B39016 /* PageTableViewController.swift */,
 				E64549871F035CFE00B39016 /* PageTableViewController.storyboard */,
 				E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */,
-				E63C83331EFF5BF5004AFBA8 /* TopView.swift */,
+				E6F8AB0B1F16485D004CFD7A /* LoginCommunicator.swift */,
+				E6C026961F165A3F00D93C88 /* BeginViewController.swift */,
+				E6E413611F6E16DE0072ACF4 /* TimelineParser.swift */,
 				E69EB7981EC81B24001FEC62 /* Main.storyboard */,
 				E69EB79B1EC81B24001FEC62 /* Assets.xcassets */,
 				E69EB79D1EC81B24001FEC62 /* LaunchScreen.storyboard */,
 				E69EB7A01EC81B24001FEC62 /* Info.plist */,
+				E6C026941F16511100D93C88 /* AddUIColor.swift */,
+				E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */,
 			);
 			path = TwoLine;
 			sourceTree = "<group>";
@@ -220,6 +240,7 @@
 			children = (
 				E69EB7E61EC98695001FEC62 /* User.swift */,
 				E69EB7E81EC98A05001FEC62 /* Tweet.swift */,
+				E6F8AB091F15F73A004CFD7A /* Account.swift */,
 			);
 			name = Model;
 			path = TwoLine;
@@ -335,14 +356,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E609E3361F1B9B31006920B0 /* IMG_5624.jpg in Resources */,
 				E631B2A21EFF886D008A8A91 /* Home.png in Resources */,
 				E631B2B31EFF88E0008A8A91 /* TabCollectionCell.xib in Resources */,
+				E609E3351F1B9B31006920B0 /* IMG_0562.jpg in Resources */,
 				E64549881F035CFE00B39016 /* PageTableViewController.storyboard in Resources */,
 				E631B2B81EFF88E0008A8A91 /* TabView.xib in Resources */,
 				E631B2A41EFF886D008A8A91 /* Search.png in Resources */,
 				E631B2B51EFF88E0008A8A91 /* TabPageViewController.storyboard in Resources */,
 				E631B2B11EFF88E0008A8A91 /* Info.plist in Resources */,
 				E69EB79F1EC81B24001FEC62 /* LaunchScreen.storyboard in Resources */,
+				E65D4F781F2E09940042AF5C /* Add.png in Resources */,
 				E69EB79C1EC81B24001FEC62 /* Assets.xcassets in Resources */,
 				E69EB79A1EC81B24001FEC62 /* Main.storyboard in Resources */,
 				E631B2A61EFF886D008A8A91 /* Tweet.png in Resources */,
@@ -372,19 +396,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C026951F16511100D93C88 /* AddUIColor.swift in Sources */,
 				E68358391F11F18B00388BF8 /* PageTweetTableViewCell.swift in Sources */,
 				E69EB7DE1EC82C13001FEC62 /* Setting.swift in Sources */,
 				E631B2B21EFF88E0008A8A91 /* TabCollectionCell.swift in Sources */,
-				E63C83341EFF5BF5004AFBA8 /* TopView.swift in Sources */,
+				E6F8AB0C1F16485D004CFD7A /* LoginCommunicator.swift in Sources */,
 				E631B2B41EFF88E0008A8A91 /* TabPageOption.swift in Sources */,
-				E69EB7E01EC83A34001FEC62 /* tweetViewController.swift in Sources */,
 				E69EB7E71EC98695001FEC62 /* User.swift in Sources */,
-				E68DD4431EDAAAD7004D505E /* dummyViewController.swift in Sources */,
 				E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */,
+				E6E413601F6E150C0072ACF4 /* TwitterCommunicator.swift in Sources */,
 				E64549861F035CC100B39016 /* PageTableViewController.swift in Sources */,
+				E6E413641F6E22B50072ACF4 /* PostTweetViewController.swift in Sources */,
 				E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */,
+				E6E413621F6E16DE0072ACF4 /* TimelineParser.swift in Sources */,
+				E6F8AB0A1F15F73A004CFD7A /* Account.swift in Sources */,
 				E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */,
 				E631B2B71EFF88E0008A8A91 /* TabView.swift in Sources */,
+				E6C026971F165A3F00D93C88 /* BeginViewController.swift in Sources */,
 				E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */,
 				E631B2B61EFF88E0008A8A91 /* TabPageViewController.swift in Sources */,
 				E69EB7951EC81B24001FEC62 /* HomeViewController.swift in Sources */,

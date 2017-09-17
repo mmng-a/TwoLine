@@ -10,11 +10,10 @@ import UIKit
 
 class PageTableViewController: UITableViewController {
     
-    var testUsers: [User] = [
-        User(id: "0", screenName: "testMan0", name: "テストマン0", profileImageURL: ""),
-        User(id: "1", screenName: "testMan1", name: "テストマン1", profileImageURL: "")
-    ]
-    var testTweets: [Tweet]!
+    static var Users: [User] = []
+    var Tweets: [Tweet] = []
+    
+    
     
     static func create() -> PageTableViewController {
         let sb = UIStoryboard(name: "PageTableViewController", bundle: Bundle(for: PageTableViewController.self))
@@ -22,8 +21,8 @@ class PageTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tweet") as! PageTweetTableViewCell
-        cell.setCell(tweet: testTweets[0])
+        let cell: PageTweetTableViewCell = tableView.dequeueReusableCell(withIdentifier: "tweet") as! PageTweetTableViewCell
+        cell.setCell(tweet: self.Tweets[indexPath.row])
         return cell
     }
 
@@ -36,10 +35,43 @@ class PageTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        testTweets = [
-            Tweet(id: "0", text: "テスト0", user: testUsers[0]),
-            Tweet(id: "1", text: "テスト1", user: testUsers[1])
-        ]
+        self.Tweets = []
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        tableView.estimatedRowHeight = 45
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        
+        LoginCommunicator().login() { isSucces in
+            switch isSucces {
+            case false:
+                print("ログイン失敗")
+            case true:
+                print("ログイン成功")
+                
+                TwitterCommunicator().getTimeline() { [weak self] data, error in
+                    
+                    if let error = error {
+                        print(error)
+                        return
+                    }
+                    
+                    print(data)
+                    let timelineParser = TimelineParser()
+                    let tweets = timelineParser.parse(data: data!)
+                    
+                    print(tweets)
+                    
+                    self?.Tweets = tweets
+                    
+                    DispatchQueue.main.async {
+                        self?.tableView.reloadData()
+                    }
+                    
+                }
+            }
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,12 +83,12 @@ class PageTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.Tweets.count
     }
 
     /*
