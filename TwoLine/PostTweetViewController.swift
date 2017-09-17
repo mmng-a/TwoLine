@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Accounts
+import Social
 
 class PostTweetViewController: UIViewController {
 
@@ -19,6 +21,43 @@ class PostTweetViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func postTweet() {
+        //ツイートを投稿
+        let URL = NSURL(string: "https://api.twitter.com/1.1/statuses/update.json")
+        
+        // ツイートしたい文章をセット
+        let params = ["status" : "Tweet from iOS!"]
+        
+        // リクエストを生成
+        let request = SLRequest(forServiceType: SLServiceTypeTwitter,
+                                requestMethod: .POST,
+                                url: URL as URL!,
+                                parameters: params)
+        
+        // 取得したアカウントをセット
+        request?.account = Account.twitterAccount
+        
+        // APIコールを実行
+        request?.perform { (responseData, urlResponse, error) -> Void in
+            
+            if error != nil {
+                print("error is \(error)")
+            }
+            else {
+                // 結果の表示
+            //    let result = JSONSerialization.JSONObjectWithData(responseData, options: .AllowFragments, error: nil) as NSDictionary
+                var result: [String: Any] = [:]
+                do {
+                    result = try JSONSerialization.jsonObject(with: responseData!, options: .allowFragments) as! [String: Any]
+                    
+                } catch let error as NSError {
+                    // エラー処理をする
+                }
+                print("result is \(result)")
+            }
+        }
     }
     
 

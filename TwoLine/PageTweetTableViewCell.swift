@@ -28,25 +28,24 @@ class PageTweetTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
     func setCell(tweet: Tweet) {
         self.userName.text = tweet.user.name
-        /*let downloadTask = URLSession.shared.dataTask(with: URL(string: tweet.user.profileImageURL)!) { [weak self] data, response, error in
-         if let error = error {
-         print(error)
-         return
-         }
-         
-         DispatchQueue.main.async {
-         // iconImageViewにダウンロードしてきた画像を代入する処理
-         self?.userProfileImage.image = UIImage(data: data!)
-         }
-         }
-         downloadTask.resume()       */self.userProfileImage.setBackgroundImage(UIImage(named: tweet.user.profileImageURL), for: .normal)
+        let downloadTask = URLSession.shared.dataTask(with: URL(string: tweet.user.profileImageURL)!) { [weak self] data, response, error in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                self?.userProfileImage.setBackgroundImage(UIImage(data: data!), for: .normal)
+            }
+        }
+        downloadTask.resume()
         self.userScreenNme.text = "@" + tweet.user.screenName
         self.userName.text = tweet.user.name
         self.tweetText.text = tweet.text
-        self.tweetTime.text = "0"
+        self.tweetTime.text = ""
     }
 
 }

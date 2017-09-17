@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tweet View Controller-->
+        <!--Dummy View Controller-->
         <scene sceneID="xXL-di-Taf">
             <objects>
-                <viewController id="cSI-LQ-IhF" customClass="tweetViewController" customModule="TwoLine" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cSI-LQ-IhF" customClass="dummyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Czd-9Y-hxv"/>
                         <viewControllerLayoutGuide type="bottom" id="Coq-Nr-4Iv"/>
