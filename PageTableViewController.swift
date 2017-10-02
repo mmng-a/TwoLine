@@ -19,10 +19,7 @@ class PageTableViewController: UITableViewController {
         let sb = UIStoryboard(name: "PageTableViewController", bundle: Bundle(for: PageTableViewController.self))
         return sb.instantiateInitialViewController() as! PageTableViewController
     }
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        <#code#>
-    }
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PageTweetTableViewCell = tableView.dequeueReusableCell(withIdentifier: "tweet") as! PageTweetTableViewCell
         cell.setCell(tweet: self.Tweets[indexPath.row])

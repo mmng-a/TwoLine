@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="17A360a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Dummy View Controller-->
         <scene sceneID="xXL-di-Taf">
@@ -68,35 +73,6 @@
             </objects>
             <point key="canvasLocation" x="1188" y="1085"/>
         </scene>
-        <!--Begin View Controller-->
-        <scene sceneID="XeT-wG-B8r">
-            <objects>
-                <viewController id="zam-n5-c52" customClass="BeginViewController" customModule="TwoLine" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="B2Y-Cb-YJy"/>
-                        <viewControllerLayoutGuide type="bottom" id="HbL-bW-3do"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="X32-JQ-6xq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7X-zZ-VNa">
-                                <rect key="frame" x="305" y="28" width="46" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="83"/>
-                                <state key="normal" title="×"/>
-                                <connections>
-                                    <segue destination="49e-Tb-3d3" kind="push" id="7n7-66-LYL"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a5m-je-zPB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-359.19999999999999" y="-673.31334332833592"/>
-        </scene>
         <!--Search View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -143,7 +119,7 @@
                 <tabBarController id="49e-Tb-3d3" customClass="TabButtonTabBarController" customModule="TwoLine" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ARW-eb-SVd"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA" customClass="tabbar" customModule="TwoLine" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -158,7 +134,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="36"/>
+            <point key="canvasLocation" x="329" y="278"/>
         </scene>
     </scenes>
     <resources>

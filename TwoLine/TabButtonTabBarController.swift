@@ -18,7 +18,8 @@ class TabButtonTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupHomeTab()
-        tabBar.bounds.size.height = tabBar.bounds.size.height * 0.5     //0.5~0.7
+        tabBar.bounds.size.height = tabBar.bounds.size.height * 1     //0.5~0.7
+        
         setupTabButton()
         setupTweetButton()
         
@@ -50,7 +51,7 @@ class TabButtonTabBarController: UITabBarController {
         tabButton.setImage(AddImage, for: UIControlState.normal)
         tabButton.tintColor = UIColor.systemDefaultTintGray
         tabButton.sizeToFit()
-        tabButton.bounds.size.width = tabBar.bounds.size.width * 0.2 + 2
+        tabButton.bounds.size.width = tabBar.bounds.size.width * 0.2
         tabButton.bounds.size.height = tabBar.bounds.size.height
         tabButton.center = CGPoint(x: tabBar.bounds.size.width * 0.7, y: tabBar.bounds.size.height * 0.5)
         tabButton.addTarget(self, action: #selector(TabButtonTabBarController.tapTabButton), for: .touchUpInside)
@@ -64,11 +65,15 @@ class TabButtonTabBarController: UITabBarController {
         tweetButton.backgroundColor = UIColor.currentColor
         tweetButton.tintColor = UIColor.white
         tweetButton.sizeToFit()
-        tweetButton.bounds.size.width = tabBar.bounds.size.width * 0.2 + 2
+        tweetButton.bounds.size.width = tabBar.bounds.size.width * 0.2
         tweetButton.bounds.size.height = tabBar.bounds.size.height
         tweetButton.center = CGPoint(x: tabBar.bounds.size.width * 0.5, y: tabBar.bounds.size.height * 0.5)
-        tweetButton.addTarget(self, action: #selector(TabButtonTabBarController.tapTweetButton), for: .touchUpInside)
+        tweetButton.addTarget(self, action: #selector(TabButtonTabBarController.transitionTweetTextView), for: .touchUpInside)
         tabBar.addSubview(tweetButton)
+    }
+    
+    func transitionTweetTextView(){
+        
     }
     
     func tapTabButton() {
