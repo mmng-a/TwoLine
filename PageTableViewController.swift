@@ -42,32 +42,6 @@ class PageTableViewController: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         
-        LoginCommunicator().login() { isSucces in
-            switch isSucces {
-            case false:
-                print("ログイン失敗")
-            case true:
-                print("ログイン成功")
-                
-                TwitterCommunicator().getTimeline() { [weak self] data, error in
-                    
-                    if let error = error {
-                        print(error)
-                        return
-                    }
-                    
-                    let timelineParser = TimelineParser()
-                    let tweets = timelineParser.parse(data: data!)
-                    
-                    self?.Tweets = tweets
-                    
-                    DispatchQueue.main.async { [weak self] in
-                        self?.tableView.reloadData()
-                    }
-                    
-                }
-            }
-        }
 
     }
 

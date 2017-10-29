@@ -35,7 +35,7 @@ class TabButtonTabBarController: UITabBarController {
         
         let pageVC = TabPageViewController.create()
         let vc1 = PageTableViewController.create()
-        let vc2 = PageTableViewController.create()
+        let vc2 = ListTimelineViewController()
         pageVC.tabItems = [(vc1, "Home"), (vc2, "Notice")]
         pageVC.tabBarItem.image = UIImage(named: "Home.png")
         

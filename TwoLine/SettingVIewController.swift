@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import TwitterKit
 
 class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setupTWTRLogInButton()
     }
     
     override func didReceiveMemoryWarning() {
@@ -20,12 +23,18 @@ class SettingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-//    Twitter.sharedInstance().logIn(completion: { (session, error) in
-//    if let sess = session {
-//    print("signed in as \(sess.userName)");
-//    } else {
-//    print("error: \(error.localizedDescription)");
-//    }
-//    }
+    func setupTWTRLogInButton(){
+        let logInButton = TWTRLogInButton(logInCompletion: { session, error in
+            if (session != nil) {
+                print("signed in as \(String(describing: session?.userName))");
+            } else {
+                print("error: \(String(describing: error?.localizedDescription))");
+            }
+        })
+        logInButton.center = self.view.center
+        self.view.addSubview(logInButton)
+    }
+    
+    
 }
 

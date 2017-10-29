@@ -25,6 +25,11 @@
 		E64549861F035CC100B39016 /* PageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64549851F035CC100B39016 /* PageTableViewController.swift */; };
 		E64549881F035CFE00B39016 /* PageTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64549871F035CFE00B39016 /* PageTableViewController.storyboard */; };
 		E645C1221F7A2AA400DAC402 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E645C1211F7A2AA400DAC402 /* TweetViewController.swift */; };
+		E65C99431FA4103F0015568F /* TwitterShareExtensionUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E65C993F1FA4103E0015568F /* TwitterShareExtensionUIResources.bundle */; };
+		E65C99441FA4103F0015568F /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E65C99401FA4103E0015568F /* TwitterKitResources.bundle */; };
+		E65C99451FA4103F0015568F /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65C99411FA4103E0015568F /* TwitterKit.framework */; };
+		E65C99461FA4103F0015568F /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65C99421FA4103E0015568F /* TwitterCore.framework */; };
+		E65C99481FA57DDA0015568F /* ListTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */; };
 		E65D4F781F2E09940042AF5C /* Add.png in Resources */ = {isa = PBXBuildFile; fileRef = E65D4F771F2E09940042AF5C /* Add.png */; };
 		E68358391F11F18B00388BF8 /* PageTweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */; };
 		E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */; };
@@ -92,6 +97,11 @@
 		E64549851F035CC100B39016 /* PageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageTableViewController.swift; path = ../PageTableViewController.swift; sourceTree = "<group>"; };
 		E64549871F035CFE00B39016 /* PageTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageTableViewController.storyboard; sourceTree = "<group>"; };
 		E645C1211F7A2AA400DAC402 /* TweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
+		E65C993F1FA4103E0015568F /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
+		E65C99401FA4103E0015568F /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
+		E65C99411FA4103E0015568F /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		E65C99421FA4103E0015568F /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTimeLineViewController.swift; sourceTree = "<group>"; };
 		E65D4F771F2E09940042AF5C /* Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add.png; sourceTree = "<group>"; };
 		E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTweetTableViewCell.swift; sourceTree = "<group>"; };
 		E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtonTabBarController.swift; sourceTree = "<group>"; };
@@ -112,10 +122,6 @@
 		E69EB7DD1EC82C13001FEC62 /* SettingVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVIewController.swift; sourceTree = "<group>"; };
 		E69EB7E61EC98695001FEC62 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E69EB7E81EC98A05001FEC62 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
-		E6AFA1A21F80896800F4B26D /* TwitterShareExtensionUIResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterShareExtensionUIResources.bundle; sourceTree = "<group>"; };
-		E6AFA1A31F80896800F4B26D /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TwitterKitResources.bundle; sourceTree = "<group>"; };
-		E6AFA1A41F80896800F4B26D /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
-		E6AFA1A51F80896800F4B26D /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		E6AFA1A61F8095AA00F4B26D /* MyTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabbar.swift; sourceTree = "<group>"; };
 		E6AFA1A81F80A04B00F4B26D /* TwoLine-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TwoLine-Bridging-Header.h"; sourceTree = "<group>"; };
 		E6C026941F16511100D93C88 /* AddUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUIColor.swift; sourceTree = "<group>"; };
@@ -123,7 +129,6 @@
 		E6E4135F1F6E150C0072ACF4 /* TwitterCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterCommunicator.swift; sourceTree = "<group>"; };
 		E6E413611F6E16DE0072ACF4 /* TimelineParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineParser.swift; sourceTree = "<group>"; };
 		E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTweetViewController.swift; sourceTree = "<group>"; };
-		E6E59C971F7D61D100E05A67 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6F8AB091F15F73A004CFD7A /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		E6F8AB0B1F16485D004CFD7A /* LoginCommunicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCommunicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +138,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65C99451FA4103F0015568F /* TwitterKit.framework in Frameworks */,
+				E65C99461FA4103F0015568F /* TwitterCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,11 +205,22 @@
 			path = TwoLine/Sources;
 			sourceTree = "<group>";
 		};
+		E65C993E1FA4103E0015568F /* Twitter-Kit-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E65C993F1FA4103E0015568F /* TwitterShareExtensionUIResources.bundle */,
+				E65C99401FA4103E0015568F /* TwitterKitResources.bundle */,
+				E65C99411FA4103E0015568F /* TwitterKit.framework */,
+				E65C99421FA4103E0015568F /* TwitterCore.framework */,
+			);
+			path = "Twitter-Kit-iOS";
+			sourceTree = "<group>";
+		};
 		E69EB7861EC81B24001FEC62 = {
 			isa = PBXGroup;
 			children = (
+				E65C993E1FA4103E0015568F /* Twitter-Kit-iOS */,
 				E6AFA1A81F80A04B00F4B26D /* TwoLine-Bridging-Header.h */,
-				E6AFA1A11F80896700F4B26D /* Twitter-Kit-iOS */,
 				E631B29C1EFF886D008A8A91 /* Image */,
 				E69EB7E51EC98656001FEC62 /* Model */,
 				E69EB7911EC81B24001FEC62 /* TwoLine */,
@@ -246,8 +264,8 @@
 				E6C026941F16511100D93C88 /* AddUIColor.swift */,
 				E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */,
 				E645C1211F7A2AA400DAC402 /* TweetViewController.swift */,
-				E6E59C971F7D61D100E05A67 /* GoogleService-Info.plist */,
 				E6AFA1A61F8095AA00F4B26D /* MyTabbar.swift */,
+				E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */,
 			);
 			path = TwoLine;
 			sourceTree = "<group>";
@@ -279,17 +297,6 @@
 			);
 			name = Model;
 			path = TwoLine;
-			sourceTree = "<group>";
-		};
-		E6AFA1A11F80896700F4B26D /* Twitter-Kit-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				E6AFA1A21F80896800F4B26D /* TwitterShareExtensionUIResources.bundle */,
-				E6AFA1A31F80896800F4B26D /* TwitterKitResources.bundle */,
-				E6AFA1A41F80896800F4B26D /* TwitterKit.framework */,
-				E6AFA1A51F80896800F4B26D /* TwitterCore.framework */,
-			);
-			path = "Twitter-Kit-iOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,7 +371,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "麻生昌志";
 				TargetAttributes = {
 					E69EB78E1EC81B24001FEC62 = {
@@ -413,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E609E3361F1B9B31006920B0 /* IMG_5624.jpg in Resources */,
+				E65C99431FA4103F0015568F /* TwitterShareExtensionUIResources.bundle in Resources */,
 				E631B2A21EFF886D008A8A91 /* Home.png in Resources */,
 				E631B2B31EFF88E0008A8A91 /* TabCollectionCell.xib in Resources */,
 				E609E3351F1B9B31006920B0 /* IMG_0562.jpg in Resources */,
@@ -427,6 +435,7 @@
 				E69EB79A1EC81B24001FEC62 /* Main.storyboard in Resources */,
 				E631B2A61EFF886D008A8A91 /* Tweet.png in Resources */,
 				E631B2A51EFF886D008A8A91 /* Setting.png in Resources */,
+				E65C99441FA4103F0015568F /* TwitterKitResources.bundle in Resources */,
 				E631B2A31EFF886D008A8A91 /* reload.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +615,7 @@
 				E631B2B21EFF88E0008A8A91 /* TabCollectionCell.swift in Sources */,
 				E6F8AB0C1F16485D004CFD7A /* LoginCommunicator.swift in Sources */,
 				E631B2B41EFF88E0008A8A91 /* TabPageOption.swift in Sources */,
+				E65C99481FA57DDA0015568F /* ListTimeLineViewController.swift in Sources */,
 				E69EB7E71EC98695001FEC62 /* User.swift in Sources */,
 				E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */,
 				E6E413601F6E150C0072ACF4 /* TwitterCommunicator.swift in Sources */,
@@ -684,7 +694,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -692,7 +704,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -733,7 +749,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -741,7 +759,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -773,6 +795,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GLQ4RHPUQV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
 				INFOPLIST_FILE = TwoLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLine;
@@ -790,6 +816,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GLQ4RHPUQV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Twitter-Kit-iOS",
+				);
 				INFOPLIST_FILE = TwoLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLine;

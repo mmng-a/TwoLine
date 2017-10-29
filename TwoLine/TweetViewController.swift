@@ -21,6 +21,14 @@ class TweetViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func tweet() {
+        let composer = TWTRComposer()
+        composer.setText("Hello Twitter!")
+        composer.setImage(UIImage(named: "Home.png"))
+        composer.setURL(URL(string: "https://dev.twitter.com"))
+//        composer.show(from: self) { (result in) }
+    }
+    
 
     /*
     // MARK: - Navigation
