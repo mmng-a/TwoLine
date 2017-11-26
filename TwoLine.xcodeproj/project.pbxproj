@@ -219,8 +219,8 @@
 		E69EB7861EC81B24001FEC62 = {
 			isa = PBXGroup;
 			children = (
-				E65C993E1FA4103E0015568F /* Twitter-Kit-iOS */,
 				E6AFA1A81F80A04B00F4B26D /* TwoLine-Bridging-Header.h */,
+				E65C993E1FA4103E0015568F /* Twitter-Kit-iOS */,
 				E631B29C1EFF886D008A8A91 /* Image */,
 				E69EB7E51EC98656001FEC62 /* Model */,
 				E69EB7911EC81B24001FEC62 /* TwoLine */,
@@ -377,18 +377,20 @@
 					E69EB78E1EC81B24001FEC62 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = GLQ4RHPUQV;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					E69EB7A41EC81B24001FEC62 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = GLQ4RHPUQV;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E69EB78E1EC81B24001FEC62;
 					};
 					E69EB7AF1EC81B24001FEC62 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = GLQ4RHPUQV;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 						TestTargetID = E69EB78E1EC81B24001FEC62;
 					};
@@ -805,7 +807,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TwoLine-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -825,7 +829,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TwoLine-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -840,7 +846,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwoLine.app/TwoLine";
 			};
 			name = Debug;
@@ -856,7 +863,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwoLine.app/TwoLine";
 			};
 			name = Release;
@@ -871,7 +879,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLineUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TwoLine;
 			};
 			name = Debug;
@@ -886,7 +895,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TwoLineUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = TwoLine;
 			};
 			name = Release;

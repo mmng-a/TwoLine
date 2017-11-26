@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -19,8 +19,8 @@
             <objects>
                 <viewController id="cSI-LQ-IhF" customClass="dummyViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Czd-9Y-hxv"/>
-                        <viewControllerLayoutGuide type="bottom" id="Coq-Nr-4Iv"/>
+                        <viewControllerLayoutGuide type="top" id="cfY-2s-Fdx"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvE-Sh-oK1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GSG-I2-zPn" customClass="PostTweetViewContro">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -40,8 +40,8 @@
             <objects>
                 <viewController id="2ki-Ly-Dqq" customClass="dummyViewController" customModule="TwoLine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pby-mg-F8J"/>
-                        <viewControllerLayoutGuide type="bottom" id="4Dm-sd-LMw"/>
+                        <viewControllerLayoutGuide type="top" id="7Lt-sn-SCF"/>
+                        <viewControllerLayoutGuide type="bottom" id="iIR-Nl-4du"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nnI-cP-OjV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -59,8 +59,8 @@
             <objects>
                 <viewController id="3Wi-4f-VZd" customClass="SettingViewController" customModule="TwoLine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="GoB-Su-qMC"/>
-                        <viewControllerLayoutGuide type="bottom" id="82y-sn-bDf"/>
+                        <viewControllerLayoutGuide type="top" id="uq0-dn-30r"/>
+                        <viewControllerLayoutGuide type="bottom" id="iUs-VT-aD8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EaB-kA-q0D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -78,8 +78,8 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SearchViewController" customModule="TwoLine" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                        <viewControllerLayoutGuide type="top" id="0fr-9S-FGE"/>
+                        <viewControllerLayoutGuide type="bottom" id="LFS-qq-3hL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -117,6 +117,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="TabButtonTabBarController" customModule="TwoLine" customModuleProvider="target" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="ARW-eb-SVd"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA" customClass="tabbar" customModule="TwoLine" customModuleProvider="target">

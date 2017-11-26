@@ -12,10 +12,10 @@ struct User {
     //ユーザーのid
     let id: String
     
-    //ユーザーのスクリーンネーム(@)calIfa_peach
+    //ユーザーのスクリーンネーム: (@)calIfa_peach
     let screenName: String
     
-    //ユーザーネームカリファ＠ピーチ
+    //ユーザーネーム: カリファ＠ピーチ
     let name: String
     
     //プロフィール画像URL

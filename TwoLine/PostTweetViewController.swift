@@ -43,7 +43,7 @@ class PostTweetViewController: UIViewController {
         request?.perform { (responseData, urlResponse, error) -> Void in
             
             if error != nil {
-                print("error is \(error)")
+                print("error is \(String(describing: error) )")
             }
             else {
                 // 結果の表示
@@ -52,7 +52,7 @@ class PostTweetViewController: UIViewController {
                 do {
                     result = try JSONSerialization.jsonObject(with: responseData!, options: .allowFragments) as! [String: Any]
                     
-                } catch let error as NSError {
+                } catch _ as NSError {
                     // エラー処理をする
                 }
                 print("result is \(result)")

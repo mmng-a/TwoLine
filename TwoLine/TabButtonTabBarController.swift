@@ -25,6 +25,7 @@ class TabButtonTabBarController: UITabBarController {
         
         //gobackBegin()
         
+        self.navigationController?.navigationBar.backgroundColor = UIColor.white  // バー背景色
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,9 +37,8 @@ class TabButtonTabBarController: UITabBarController {
         let pageVC = TabPageViewController.create()
         let vc1 = PageTableViewController.create()
         let vc2 = ListTimelineViewController()
-        pageVC.tabItems = [(vc1, "Home"), (vc2, "Notice")]
+        pageVC.tabItems = [(vc1, "Home"), (vc2, "listtimeline")]
         pageVC.tabBarItem.image = UIImage(named: "Home.png")
-        
         self.viewControllers?.insert(pageVC, at: 0)
         if pageVC.tabItems.count >= 3 {
             pageVC.isInfinity = true
@@ -72,11 +72,11 @@ class TabButtonTabBarController: UITabBarController {
         tabBar.addSubview(tweetButton)
     }
     
-    func transitionTweetTextView(){
+    @objc func transitionTweetTextView(){
         
     }
     
-    func tapTabButton() {
+    @objc func tapTabButton() {
         print("Tap TabButton")
     }
     

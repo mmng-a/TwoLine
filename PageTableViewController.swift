@@ -13,7 +13,8 @@ class PageTableViewController: UITableViewController {
     static var Users: [User] = []
     var Tweets: [Tweet] = []
     
-    
+    var accountStore: ACAccountStore = ACAccountStore()
+    var twitterAccount: ACAccount?
     
     static func create() -> PageTableViewController {
         let sb = UIStoryboard(name: "PageTableViewController", bundle: Bundle(for: PageTableViewController.self))
@@ -40,6 +41,9 @@ class PageTableViewController: UITableViewController {
         self.tableView.dataSource = self
         tableView.estimatedRowHeight = 45
         tableView.rowHeight = UITableViewAutomaticDimension
+        
+        
+        
         
         
 
