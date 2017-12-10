@@ -20,6 +20,7 @@ class TabButtonTabBarController: UITabBarController {
         setupHomeTab()
         tabBar.bounds.size.height = tabBar.bounds.size.height * 1     //0.5~0.7
         
+        TWTRLogin()
         setupTabButton()
         setupTweetButton()
         
@@ -37,7 +38,8 @@ class TabButtonTabBarController: UITabBarController {
         let pageVC = TabPageViewController.create()
         let vc1 = PageTableViewController.create()
         let vc2 = ListTimelineViewController()
-        pageVC.tabItems = [(vc1, "Home"), (vc2, "listtimeline")]
+        let vc3 = ListTimelineViewController()
+        pageVC.tabItems = [(vc1, "Home"), (vc2, "listtimeline"), (vc3, "test")]
         pageVC.tabBarItem.image = UIImage(named: "Home.png")
         self.viewControllers?.insert(pageVC, at: 0)
         if pageVC.tabItems.count >= 3 {
@@ -82,6 +84,18 @@ class TabButtonTabBarController: UITabBarController {
     
     func tapTweetButton() {
         print("Tap TweetButon")
+    }
+    
+    func TWTRLogin() {
+        Twitter.sharedInstance().logIn { session, error in
+            guard let session = session else {
+                if let error = error {
+                    print("エラーが起きました => \(error.localizedDescription)")
+                }
+                return
+            }
+            print("@\(session.userName)でログインしました")
+        }
     }
     
     

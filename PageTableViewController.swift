@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class PageTableViewController: UITableViewController {
     
@@ -26,6 +27,35 @@ class PageTableViewController: UITableViewController {
         cell.setCell(tweet: self.Tweets[indexPath.row])
         return cell
     }
+    
+    func ShowTweet(){guard let session = Twitter.sharedInstance().sessionStore.session() else {
+        
+        return
+        }
+        
+        var clientError: NSError?
+        
+        let apiClient = TWTRAPIClient(userID: session.userID)
+        let request = apiClient.urlRequest(
+            withMethod: "GET",
+            url: "https://api.twitter.com/1.1/statuses/user_timeline.json",
+            parameters: [
+                "user_id": session.userID,
+                "count": "10", // Intで10を渡すとエラーになる模様で、文字列にしてやる必要がある
+            ],
+            error: &clientError
+        )
+        
+        apiClient.sendTwitterRequest(request) { response, data, error in // NSURLResponse?, NSData?, NSError?
+            if let error = error {
+                print(error.localizedDescription)
+            } else if let data = data {
+                let json = JSON(data)
+            }
+        }
+        
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +71,12 @@ class PageTableViewController: UITableViewController {
         self.tableView.dataSource = self
         tableView.estimatedRowHeight = 45
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-        
-        
-        
-        
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        ShowTweet()
     }
 
     override func didReceiveMemoryWarning() {

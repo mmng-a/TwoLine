@@ -7,29 +7,55 @@
 //
 
 import UIKit
+import SwiftyJSON
 
-struct Tweet {
-    //Tweetのid
-    let id: String
+class Tweet {
+    // Tweetのid
+    let id: Int
     
-    //Tweetの本文
+    // Tweetの本文
     let text: String
     
-    //Tweetのユーザー
+    // Tweetのユーザー
     let user: User
     
+    // Tweetされた時間
+    let createdAt: String
     
-    init?(json: Any) {
-        guard let dictionary = json as? [String: Any] else { return nil }
+    // hash tagとurl
+    let entities: Entities?
+    
+    //自分がお気に入りしたか
+    let favorited: Bool
+    
+    //自分がRTしたか
+    let retweeted: Bool
+    
+    //返信先ユーザーネーム
+    let inReplyToScreenName: String?
+    
+    //返信先ツイートID
+    let inReplyTostatusId: Int?
+    
+    //返信先ユーザーID
+    let inReplyToUserId: Int?
+    
+    //RTしたツイート
+    var reweetedStatus: Tweet? = nil
+    
+    //引用RTしたTweetのID
+    let quotedStatusId: Int?
+    
+    //引用したTweet
+    let quotedStatus: Tweet?
+    
+    //RTされたTweetが途中で切れているか(http://absg.hatenablog.com/entry/2016/11/01/205507これを参考に後で修正)
+    let truncated: Bool
+    
+    
+    init(json: JSON) {
+        self.id = json[""].intValue
         
-        guard let id = dictionary["id_str"] as? String else { return nil }
-        guard let text = dictionary["text"] as? String else { return nil }
-        guard let userJSON = dictionary["user"] else { return nil }
-        guard let user = User(json: userJSON) else { return nil }
-        
-        self.id = id
-        self.text = text
-        self.user = user
     }
 
 }

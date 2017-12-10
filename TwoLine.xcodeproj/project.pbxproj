@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03DEAFC7D8B75D72EAEB13B3 /* Pods_TwoLineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B291612B241187A17C59E9D /* Pods_TwoLineTests.framework */; };
+		3BEA08603D40C78697DDCAD0 /* Pods_TwoLine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60ACFCD3DBB11420A6BFCDA /* Pods_TwoLine.framework */; };
+		61E1FC1D938D7EE7EFB3538B /* Pods_TwoLineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61C5172F0EA5D4F9859C4829 /* Pods_TwoLineUITests.framework */; };
 		E609E3351F1B9B31006920B0 /* IMG_0562.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E609E3331F1B9B31006920B0 /* IMG_0562.jpg */; };
 		E609E3361F1B9B31006920B0 /* IMG_5624.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E609E3341F1B9B31006920B0 /* IMG_5624.jpg */; };
 		E631B2A21EFF886D008A8A91 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29D1EFF886D008A8A91 /* Home.png */; };
@@ -31,6 +34,7 @@
 		E65C99461FA4103F0015568F /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65C99421FA4103E0015568F /* TwitterCore.framework */; };
 		E65C99481FA57DDA0015568F /* ListTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */; };
 		E65D4F781F2E09940042AF5C /* Add.png in Resources */ = {isa = PBXBuildFile; fileRef = E65D4F771F2E09940042AF5C /* Add.png */; };
+		E6706EA21FDCFACA008A2AFC /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6706EA11FDCFACA008A2AFC /* Entities.swift */; };
 		E68358391F11F18B00388BF8 /* PageTweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */; };
 		E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */; };
 		E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7921EC81B24001FEC62 /* AppDelegate.swift */; };
@@ -76,8 +80,11 @@
 		3840078E2A2C045A11E555CD /* Pods-TwoLineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoLineUITests/Pods-TwoLineUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		52C46D28C5F1CB917A898DFE /* Pods-TwoLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoLine/Pods-TwoLine.release.xcconfig"; sourceTree = "<group>"; };
 		56A02B051CF78DCB7043E39D /* Pods-TwoLineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoLineTests/Pods-TwoLineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		61C5172F0EA5D4F9859C4829 /* Pods_TwoLineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoLineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B291612B241187A17C59E9D /* Pods_TwoLineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoLineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B34EE7FFBEA1F838A4930DC /* Pods-TwoLineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLineUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwoLineUITests/Pods-TwoLineUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4C650C9D6B958FEFB90D1F3 /* Pods-TwoLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwoLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwoLine/Pods-TwoLine.debug.xcconfig"; sourceTree = "<group>"; };
+		D60ACFCD3DBB11420A6BFCDA /* Pods_TwoLine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwoLine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E609E3331F1B9B31006920B0 /* IMG_0562.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0562.jpg; sourceTree = "<group>"; };
 		E609E3341F1B9B31006920B0 /* IMG_5624.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5624.jpg; sourceTree = "<group>"; };
 		E631B29D1EFF886D008A8A91 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
@@ -103,6 +110,7 @@
 		E65C99421FA4103E0015568F /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTimeLineViewController.swift; sourceTree = "<group>"; };
 		E65D4F771F2E09940042AF5C /* Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add.png; sourceTree = "<group>"; };
+		E6706EA11FDCFACA008A2AFC /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTweetTableViewCell.swift; sourceTree = "<group>"; };
 		E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtonTabBarController.swift; sourceTree = "<group>"; };
 		E69EB78F1EC81B24001FEC62 /* TwoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +148,7 @@
 			files = (
 				E65C99451FA4103F0015568F /* TwitterKit.framework in Frameworks */,
 				E65C99461FA4103F0015568F /* TwitterCore.framework in Frameworks */,
+				3BEA08603D40C78697DDCAD0 /* Pods_TwoLine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03DEAFC7D8B75D72EAEB13B3 /* Pods_TwoLineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E1FC1D938D7EE7EFB3538B /* Pods_TwoLineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +240,7 @@
 				E69EB7B31EC81B24001FEC62 /* TwoLineUITests */,
 				E69EB7901EC81B24001FEC62 /* Products */,
 				5DBD2843EB8E4769F892503A /* Pods */,
+				FBEA430CC3819D36EFA65049 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -294,9 +306,20 @@
 				E69EB7E61EC98695001FEC62 /* User.swift */,
 				E69EB7E81EC98A05001FEC62 /* Tweet.swift */,
 				E6F8AB091F15F73A004CFD7A /* Account.swift */,
+				E6706EA11FDCFACA008A2AFC /* Entities.swift */,
 			);
 			name = Model;
 			path = TwoLine;
+			sourceTree = "<group>";
+		};
+		FBEA430CC3819D36EFA65049 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D60ACFCD3DBB11420A6BFCDA /* Pods_TwoLine.framework */,
+				6B291612B241187A17C59E9D /* Pods_TwoLineTests.framework */,
+				61C5172F0EA5D4F9859C4829 /* Pods_TwoLineUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,9 +584,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwoLine/Pods-TwoLine-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -616,6 +642,7 @@
 				E6AFA1A71F8095AA00F4B26D /* MyTabbar.swift in Sources */,
 				E631B2B21EFF88E0008A8A91 /* TabCollectionCell.swift in Sources */,
 				E6F8AB0C1F16485D004CFD7A /* LoginCommunicator.swift in Sources */,
+				E6706EA21FDCFACA008A2AFC /* Entities.swift in Sources */,
 				E631B2B41EFF88E0008A8A91 /* TabPageOption.swift in Sources */,
 				E65C99481FA57DDA0015568F /* ListTimeLineViewController.swift in Sources */,
 				E69EB7E71EC98695001FEC62 /* User.swift in Sources */,
