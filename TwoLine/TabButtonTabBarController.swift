@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TwitterKit
 
 
 class TabButtonTabBarController: UITabBarController {
@@ -20,7 +21,7 @@ class TabButtonTabBarController: UITabBarController {
         setupHomeTab()
         tabBar.bounds.size.height = tabBar.bounds.size.height * 1     //0.5~0.7
         
-        TWTRLogin()
+//        TWTRLogin()
         setupTabButton()
         setupTweetButton()
         
@@ -87,15 +88,16 @@ class TabButtonTabBarController: UITabBarController {
     }
     
     func TWTRLogin() {
-        Twitter.sharedInstance().logIn { session, error in
-            guard let session = session else {
-                if let error = error {
-                    print("エラーが起きました => \(error.localizedDescription)")
-                }
-                return
-            }
-            print("@\(session.userName)でログインしました")
-        }
+//        Twitter.sharedInstance().logIn { session, error in
+//            guard let session = session else {
+//                if let error = error {
+//                    print("エラーが起きました => \(error.localizedDescription)")
+//                }
+//                return
+//            }
+//            print("@\(session.userName)でログインしました")
+//        }
+        TWTRLogin()
     }
     
     

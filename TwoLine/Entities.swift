@@ -12,14 +12,23 @@ import SwiftyJSON
 struct Entities {
     
     //ハッシュタグ
-    let hashtags: [String]
+    var hashtags: [Hashtag]
     
-    //ハッシュタグのテキスト中の出現位置
-    let indices: [(Int, Int)]
+    //URL
+    var URLs: [URLObject?]
     
+    //@ツイート
+    var userMentions: [UserMentions?]
     
+    //media（画像、動画）
+    var media: [Media?]
     
-    //（短縮）URL
-    let url: NSURL
+    init(json: JSON) {
+    
+        self.hashtags = json["hashtags"].arrayValue.map({ Hashtag(json: $0)})
+        self.URLs = json["urls"].arrayValue.map({ URLObject(json:$0) })
+        self.userMentions = json["user_mentions"].arrayValue.map({ UserMentions(json:$0 )})
+        self.media = json["meia"].arrayValue.map({ Media(json: $0) })
+    }
     
 }

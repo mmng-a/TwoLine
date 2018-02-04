@@ -8,11 +8,13 @@
 
 import UIKit
 import SwiftyJSON
+import TwitterKit
 
 class PageTableViewController: UITableViewController {
     
-    static var Users: [User] = []
-    var Tweets: [Tweet] = []
+    
+    static var users: [User] = []
+    var tweets: [Tweet] = []
     
     var accountStore: ACAccountStore = ACAccountStore()
     var twitterAccount: ACAccount?
@@ -24,36 +26,39 @@ class PageTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PageTweetTableViewCell = tableView.dequeueReusableCell(withIdentifier: "tweet") as! PageTweetTableViewCell
-        cell.setCell(tweet: self.Tweets[indexPath.row])
+        cell.setCell(tweet: self.tweets[indexPath.row])
         return cell
     }
     
-    func ShowTweet(){guard let session = Twitter.sharedInstance().sessionStore.session() else {
+    func ShowTweet(){
+        guard let session = TWTRTwitter.sharedInstance().sessionStore.session() else {
         
-        return
+            return
         }
         
         var clientError: NSError?
         
         let apiClient = TWTRAPIClient(userID: session.userID)
-        let request = apiClient.urlRequest(
-            withMethod: "GET",
-            url: "https://api.twitter.com/1.1/statuses/user_timeline.json",
-            parameters: [
-                "user_id": session.userID,
-                "count": "10", // Intで10を渡すとエラーになる模様で、文字列にしてやる必要がある
-            ],
-            error: &clientError
-        )
-        
-        apiClient.sendTwitterRequest(request) { response, data, error in // NSURLResponse?, NSData?, NSError?
-            if let error = error {
-                print(error.localizedDescription)
-            } else if let data = data {
-                let json = JSON(data)
+        DispatchQueue.global(qos: .default).async {
+            let request = apiClient.urlRequest(
+                withMethod: "GET",
+                urlString: "https://api.twitter.com/1.1/statuses/home_timeline.json",
+                parameters: [
+                    "user_id": session.userID,
+                    "count": "200", // Intで10を渡すとエラーになる模様で、文字列にしてやる必要がある
+                ],
+                error: &clientError
+            )
+            apiClient.sendTwitterRequest(request) { response, data, error in // NSURLResponse?, NSData?, NSError?
+                if let error = error {
+                    print(error.localizedDescription)
+                } else if let data = data {
+                    
+                    self.tweets = TimelineParser.parse(data: data)
+                    self.tableView.reloadData()
+                }
             }
         }
-        
         
     }
 
@@ -66,7 +71,7 @@ class PageTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        self.Tweets = []
+        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         tableView.estimatedRowHeight = 45
@@ -93,7 +98,7 @@ class PageTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.Tweets.count
+        return self.tweets.count
     }
 
     /*

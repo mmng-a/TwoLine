@@ -7,16 +7,15 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PageTweetTableViewCell: UITableViewCell {
     
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userProfileImage: UIButton!
-    @IBOutlet weak var userScreenNme: UILabel!
+    @IBOutlet weak var userScreenName: UILabel!
     @IBOutlet weak var tweetText: UILabel!
     @IBOutlet weak var tweetTime: UILabel!
-    
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,22 +29,12 @@ class PageTweetTableViewCell: UITableViewCell {
     }
 
     func setCell(tweet: Tweet) {
-        self.userName.text = tweet.user.name
-        let downloadTask = URLSession.shared.dataTask(with: URL(string: tweet.user.profileImageURL)!) { [weak self] data, response, error in
-            if let error = error {
-                print(error)
-                return
-            }
-            
-            DispatchQueue.main.async {
-                self?.userProfileImage.setBackgroundImage(UIImage(data: data!), for: .normal)
-            }
-        }
-        downloadTask.resume()
-        self.userScreenNme.text = "@" + tweet.user.screenName
-        self.userName.text = tweet.user.name
+        self.userName.text = tweet.user?.name
+        self.userScreenName.text = "@" + (tweet.user?.screenName ?? "")
+        self.userProfileImage.kf.setImage(with: URL(string: tweet.user?.profileImageURLHttps ?? ""), for: .normal)
         self.tweetText.text = tweet.text
         self.tweetTime.text = ""
+        
     }
 
 }
