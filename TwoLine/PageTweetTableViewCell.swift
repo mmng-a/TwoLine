@@ -38,9 +38,5 @@ class PageTweetTableViewCell: UITableViewCell, TTTAttributedLabelDelegate {
         self.tweetTime.text = ""
         
     }
-
-    func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
-        let app:UIApplication = UIApplication.shared
-        app.canOpenURL(url)
-    }
+    
 }
