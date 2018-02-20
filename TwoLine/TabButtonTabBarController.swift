@@ -8,6 +8,7 @@
 
 import UIKit
 import TwitterKit
+import TabPageViewController
 
 
 class TabButtonTabBarController: UITabBarController {
@@ -17,8 +18,7 @@ class TabButtonTabBarController: UITabBarController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        setupHomeTab()
+        setupHome()
         tabBar.bounds.size.height = tabBar.bounds.size.height * 1     //0.5~0.7
         
 //        TWTRLogin()
@@ -28,21 +28,24 @@ class TabButtonTabBarController: UITabBarController {
         //gobackBegin()
         
         self.navigationController?.navigationBar.backgroundColor = UIColor.white  // バー背景色
+        
+        
+        super.viewDidLoad()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func setupHomeTab() {
-        
+    func setupHome() {
         let pageVC = TabPageViewController.create()
         let vc1 = PageTableViewController.create()
         let vc2 = ListTimelineViewController()
         let vc3 = ListTimelineViewController()
         pageVC.tabItems = [(vc1, "Home"), (vc2, "listtimeline"), (vc3, "test")]
+        let tabHeight = CGFloat(pageVC.option.tabHeight + pageVC.option.tabMargin)
+        viewControllers?.append(pageVC)
         pageVC.tabBarItem.image = UIImage(named: "Home.png")
-        self.viewControllers?.insert(pageVC, at: 0)
         if pageVC.tabItems.count >= 3 {
             pageVC.isInfinity = true
         }

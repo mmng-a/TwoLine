@@ -31,7 +31,7 @@ class PageTableViewController: UITableViewController {
     }
     
     func ShowTweet(){
-        guard let session = TWTRTwitter.sharedInstance().sessionStore.session() else {
+        guard let session = Twitter.sharedInstance().sessionStore.session() else {
         
             return
         }
@@ -40,22 +40,24 @@ class PageTableViewController: UITableViewController {
         
         let apiClient = TWTRAPIClient(userID: session.userID)
         DispatchQueue.global(qos: .default).async {
+        
             let request = apiClient.urlRequest(
                 withMethod: "GET",
-                urlString: "https://api.twitter.com/1.1/statuses/home_timeline.json",
+                url: "https://api.twitter.com/1.1/statuses/home_timeline.json",
                 parameters: [
                     "user_id": session.userID,
-                    "count": "200", // Intで10を渡すとエラーになる模様で、文字列にしてやる必要がある
-                ],
+                    "count": "10",
+                    ],
                 error: &clientError
             )
-            apiClient.sendTwitterRequest(request) { response, data, error in // NSURLResponse?, NSData?, NSError?
+            apiClient.sendTwitterRequest(request) { response, data, error in // NSURLResponse?, NSData?,NSError?
                 if let error = error {
                     print(error.localizedDescription)
                 } else if let data = data {
-                    
-                    self.tweets = TimelineParser.parse(data: data)
-                    self.tableView.reloadData()
+                    DispatchQueue.main.async {
+                        self.tweets = TimelineParser.parse(data: data)
+                        self.tableView.reloadData()
+                    }
                 }
             }
         }

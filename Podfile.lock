@@ -1,24 +1,30 @@
 PODS:
-  - Kingfisher (4.6.1)
+  - Fabric (1.7.3)
+  - Kingfisher (4.6.2)
   - SwiftyJSON (4.0.0)
+  - TabPageViewController (0.2.7)
   - TTTAttributedLabel (2.0.0)
-  - TwitterCore (3.1.0)
-  - TwitterKit (3.3.0):
-    - TwitterCore (>= 3.1.0)
+  - TwitterCore (2.8.0):
+    - Fabric
+  - TwitterKit (2.8.1):
+    - TwitterCore (>= 2.8)
 
 DEPENDENCIES:
   - Kingfisher
   - SwiftyJSON
+  - TabPageViewController
   - TTTAttributedLabel
   - TwitterKit
 
 SPEC CHECKSUMS:
-  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  Fabric: bb495bb9a7a7677c6d03a1f8b83d95bc49b47e41
+  Kingfisher: 55b9c395bf8d3949676ad3861111923990ab68cf
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TabPageViewController: c37a1257a50c2b50712dde61bf499768eee95b67
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
-  TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
-  TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
+  TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
+  TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
 
-PODFILE CHECKSUM: c14ee1539474bfa0f99c58d612498ced6319633d
+PODFILE CHECKSUM: 4dab43b22fc12f3d5efe195160ef2d00dc65dd88
 
 COCOAPODS: 1.4.0

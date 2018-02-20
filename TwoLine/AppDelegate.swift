@@ -18,12 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        TWTRTwitter.sharedInstance().start(withConsumerKey: "ffWMZqfc6AEG8SadE4zHdQNnG", consumerSecret: "TXSyLc53hfhT55S2CAvXWAszTtcOmUb2Jk2H0iJOZ86kJLc0DX")
+        Twitter.sharedInstance().start(withConsumerKey: "ffWMZqfc6AEG8SadE4zHdQNnG", consumerSecret: "TXSyLc53hfhT55S2CAvXWAszTtcOmUb2Jk2H0iJOZ86kJLc0DX")
         return true
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
-        if TWTRTwitter.sharedInstance().application(app, open: url, options: options) {
+        if Twitter.sharedInstance().application(app, open: url, options: options) {
             return true
         }
         // Your other open URL handlers follow […]
