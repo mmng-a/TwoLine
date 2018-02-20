@@ -9,7 +9,6 @@
 import UIKit
 import SwiftyJSON
 import TwitterKit
-import TTTAttributedLabel
 
 class PageTableViewController: UITableViewController {
     
@@ -80,12 +79,6 @@ class PageTableViewController: UITableViewController {
         tableView.estimatedRowHeight = 45
         tableView.rowHeight = UITableViewAutomaticDimension
 
-    }
-    
-    func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
-        if UIApplication.shared.canOpenURL(url){
-            UIApplication.shared.openURL(url)
-        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

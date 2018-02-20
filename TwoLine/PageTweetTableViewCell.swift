@@ -39,4 +39,11 @@ class PageTweetTableViewCell: UITableViewCell, TTTAttributedLabelDelegate {
         
     }
     
+    func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
+        //どこにこのメソッドを書けばいいのか分からん
+        if UIApplication.shared.canOpenURL(url){
+            UIApplication.shared.open(url)
+        }
+    }
+    
 }
