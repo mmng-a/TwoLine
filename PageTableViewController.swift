@@ -46,7 +46,7 @@ class PageTableViewController: UITableViewController {
                 url: "https://api.twitter.com/1.1/statuses/home_timeline.json",
                 parameters: [
                     "user_id": session.userID,
-                    "count": "10",
+                    "count": "30",
                     ],
                 error: &clientError
             )

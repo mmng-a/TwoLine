@@ -41,14 +41,14 @@ class TabButtonTabBarController: UITabBarController {
         let pageVC = TabPageViewController.create()
         let vc1 = PageTableViewController.create()
         let vc2 = ListTimelineViewController()
-        let vc3 = ListTimelineViewController()
-        pageVC.tabItems = [(vc1, "Home"), (vc2, "listtimeline"), (vc3, "test")]
+        let vc3 = UINavigationController()
+        pageVC.tabItems = [(vc1, "Home"), (vc2, "ListTimeLine"), (vc3, "test")]
         let tabHeight = CGFloat(pageVC.option.tabHeight + pageVC.option.tabMargin)
-        viewControllers?.append(pageVC)
-        pageVC.tabBarItem.image = UIImage(named: "Home.png")
         if pageVC.tabItems.count >= 3 {
             pageVC.isInfinity = true
         }
+        viewControllers?.insert(pageVC, at: 0)
+        pageVC.tabBarItem.image = UIImage(named: "Home.png")
     }
     
     private func setupTabButton(){
