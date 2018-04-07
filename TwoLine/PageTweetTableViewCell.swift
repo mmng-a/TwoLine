@@ -34,16 +34,15 @@ class PageTweetTableViewCell: UITableViewCell, TTTAttributedLabelDelegate {
        if tweet.retweetedStatus?.user?.name != "" {
             self.userName.text = tweet.retweetedStatus?.user?.name
             self.userScreenName.text = "@" + (tweet.retweetedStatus?.user?.screenName ?? "")
-        self.userProfileImage.kf.setImage(with: URL(string: tweet.retweetedStatus?.user?.profileImageURLHttps ?? ""), for: .normal)
+            self.userProfileImage.kf.setBackgroundImage(with: URL(string: tweet.retweetedStatus?.user?.profileImageURLHttps ?? ""), for: .normal)
             self.tweetText.text = tweet.retweetedStatus?.text
         }else {
             self.userName.text = tweet.user?.name
             self.userScreenName.text = "@" + (tweet.user?.screenName ?? "")
-            self.userProfileImage.kf.setImage(with: URL(string: tweet.user?.profileImageURLHttps ?? ""), for: .normal)
+            self.userProfileImage.kf.setBackgroundImage(with: URL(string: tweet.user?.profileImageURLHttps ?? ""), for: .normal)
             self.tweetText.text = tweet.text
         }
         self.tweetTime.text = ""
-        
     }
     
     func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {

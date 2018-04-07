@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class Tweet2 {
+struct Tweet2 {
     // Tweetのid
     var idStr: String = ""
     

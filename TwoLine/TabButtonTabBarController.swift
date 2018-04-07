@@ -37,7 +37,7 @@ class TabButtonTabBarController: UITabBarController {
         super.didReceiveMemoryWarning()
     }
     
-    func setupHome() {
+    private func setupHome() {
         let pageVC = TabPageViewController.create()
         let vc1 = PageTableViewController.create()
         let vc2 = ListTimelineViewController()
