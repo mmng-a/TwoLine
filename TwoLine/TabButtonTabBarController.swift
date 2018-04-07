@@ -74,7 +74,7 @@ class TabButtonTabBarController: UITabBarController {
         tweetButton.bounds.size.width = tabBar.bounds.size.width * 0.2
         tweetButton.bounds.size.height = tabBar.bounds.size.height
         tweetButton.center = CGPoint(x: tabBar.bounds.size.width * 0.5, y: tabBar.bounds.size.height * 0.5)
-        tweetButton.addTarget(self, action: #selector(TabButtonTabBarController.transitionTweetTextView), for: .touchUpInside)
+        tweetButton.addTarget(self, action: #selector(TabButtonTabBarController.tapTweetButton), for: .touchUpInside)
         tabBar.addSubview(tweetButton)
     }
     
@@ -86,20 +86,13 @@ class TabButtonTabBarController: UITabBarController {
         print("Tap TabButton")
     }
     
-    func tapTweetButton() {
-        print("Tap TweetButon")
+    @objc func tapTweetButton() {
+        print("tapTweetButton")
+        let nextViewController = PostTweetViewController()
+        self.present(nextViewController, animated: true, completion: nil)
     }
     
     func TWTRLogin() {
-//        Twitter.sharedInstance().logIn { session, error in
-//            guard let session = session else {
-//                if let error = error {
-//                    print("エラーが起きました => \(error.localizedDescription)")
-//                }
-//                return
-//            }
-//            print("@\(session.userName)でログインしました")
-//        }
         TWTRLogin()
     }
     

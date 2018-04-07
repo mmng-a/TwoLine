@@ -43,7 +43,7 @@ class PageTableViewController: UITableViewController {
         
             let request = apiClient.urlRequest(
                 withMethod: "GET",
-                url: "https://api.twitter.com/1.1/statuses/home_timeline.json",
+                url: "https://api.twitter.com/1.1/statuses/home_timeline.json?tweet_mode=extended",
                 parameters: [
                     "user_id": session.userID,
                     "count": "30",

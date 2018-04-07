@@ -25,26 +25,31 @@ class PageTweetTableViewCell: UITableViewCell, TTTAttributedLabelDelegate {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        tweetText.delegate = self
         // Configure the view for the selected state
     }
 
     func setCell(tweet: Tweet) {
-        self.userName.text = tweet.user?.name
-        self.userScreenName.text = "@" + (tweet.user?.screenName ?? "")
-        self.userProfileImage.kf.setImage(with: URL(string: tweet.user?.profileImageURLHttps ?? ""), for: .normal)
         self.tweetText.enabledTextCheckingTypes = NSTextCheckingResult.CheckingType.link.rawValue
-        self.tweetText.text = tweet.text
+       if tweet.retweetedStatus?.user?.name != "" {
+            self.userName.text = tweet.retweetedStatus?.user?.name
+            self.userScreenName.text = "@" + (tweet.retweetedStatus?.user?.screenName ?? "")
+        self.userProfileImage.kf.setImage(with: URL(string: tweet.retweetedStatus?.user?.profileImageURLHttps ?? ""), for: .normal)
+            self.tweetText.text = tweet.retweetedStatus?.text
+        }else {
+            self.userName.text = tweet.user?.name
+            self.userScreenName.text = "@" + (tweet.user?.screenName ?? "")
+            self.userProfileImage.kf.setImage(with: URL(string: tweet.user?.profileImageURLHttps ?? ""), for: .normal)
+            self.tweetText.text = tweet.text
+        }
         self.tweetTime.text = ""
         
     }
     
     func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
-        //どこにこのメソッドを書けばいいのか分からん
         if UIApplication.shared.canOpenURL(url){
             UIApplication.shared.open(url)
         }
-        
     }
     
 }

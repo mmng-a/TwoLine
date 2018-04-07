@@ -52,7 +52,7 @@ class Tweet2 {
     
     init(json: JSON) {
         self.idStr = json["id_str"].stringValue
-        self.text = json["text"].stringValue
+        self.text = json["full_text"].stringValue
         self.user = User(json: json["user"])
         self.createdAt = json["created_at"].stringValue
         self.entities = Entities(json: json["entities"])

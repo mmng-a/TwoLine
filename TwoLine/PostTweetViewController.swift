@@ -14,7 +14,7 @@ class PostTweetViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        postTweet()
         // Do any additional setup after loading the view.
     }
 
@@ -28,12 +28,12 @@ class PostTweetViewController: UIViewController {
         let URL = NSURL(string: "https://api.twitter.com/1.1/statuses/update.json")
         
         // ツイートしたい文章をセット
-        let params = ["status" : "Tweet from iOS!"]
+        let params = ["status" : "testTweet"]
         
         // リクエストを生成
         let request = SLRequest(forServiceType: SLServiceTypeTwitter,
                                 requestMethod: .POST,
-                                url: URL as URL!,
+                                url: URL as URL?,
                                 parameters: params)
         
         // 取得したアカウントをセット
