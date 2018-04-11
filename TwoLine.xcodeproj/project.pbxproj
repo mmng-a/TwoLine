@@ -14,6 +14,8 @@
 		E605CBF22015976D0045379A /* Tweet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605CBF12015976D0045379A /* Tweet2.swift */; };
 		E609E3351F1B9B31006920B0 /* IMG_0562.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E609E3331F1B9B31006920B0 /* IMG_0562.jpg */; };
 		E609E3361F1B9B31006920B0 /* IMG_5624.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E609E3341F1B9B31006920B0 /* IMG_5624.jpg */; };
+		E6164058207C44E200572353 /* ChangeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6164057207C44E200572353 /* ChangeCharacter.swift */; };
+		E616405E207D922000572353 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E616405D207D922000572353 /* DateExtension.swift */; };
 		E631B2A21EFF886D008A8A91 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29D1EFF886D008A8A91 /* Home.png */; };
 		E631B2A31EFF886D008A8A91 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29E1EFF886D008A8A91 /* reload.png */; };
 		E631B2A41EFF886D008A8A91 /* Search.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29F1EFF886D008A8A91 /* Search.png */; };
@@ -78,6 +80,8 @@
 		E605CBF12015976D0045379A /* Tweet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet2.swift; sourceTree = "<group>"; };
 		E609E3331F1B9B31006920B0 /* IMG_0562.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0562.jpg; sourceTree = "<group>"; };
 		E609E3341F1B9B31006920B0 /* IMG_5624.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5624.jpg; sourceTree = "<group>"; };
+		E6164057207C44E200572353 /* ChangeCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCharacter.swift; sourceTree = "<group>"; };
+		E616405D207D922000572353 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		E631B29D1EFF886D008A8A91 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		E631B29E1EFF886D008A8A91 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
 		E631B29F1EFF886D008A8A91 /* Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search.png; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 				E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */,
 				E6AFA1A61F8095AA00F4B26D /* MyTabbar.swift */,
 				E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */,
+				E6164057207C44E200572353 /* ChangeCharacter.swift */,
+				E616405D207D922000572353 /* DateExtension.swift */,
 			);
 			path = TwoLine;
 			sourceTree = "<group>";
@@ -594,8 +600,10 @@
 				E6FD09322001F1B0007AD349 /* Hashtag.swift in Sources */,
 				E65C99481FA57DDA0015568F /* ListTimeLineViewController.swift in Sources */,
 				E69EB7E71EC98695001FEC62 /* User.swift in Sources */,
+				E6164058207C44E200572353 /* ChangeCharacter.swift in Sources */,
 				E605CBF0201459D50045379A /* Account.swift in Sources */,
 				E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */,
+				E616405E207D922000572353 /* DateExtension.swift in Sources */,
 				E64549861F035CC100B39016 /* PageTableViewController.swift in Sources */,
 				E6E413641F6E22B50072ACF4 /* PostTweetViewController.swift in Sources */,
 				E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */,

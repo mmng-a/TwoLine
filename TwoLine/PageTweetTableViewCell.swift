@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 import TTTAttributedLabel
 
+
 class PageTweetTableViewCell: UITableViewCell, TTTAttributedLabelDelegate {
     
     @IBOutlet weak var userName: UILabel!
@@ -30,19 +31,27 @@ class PageTweetTableViewCell: UITableViewCell, TTTAttributedLabelDelegate {
     }
 
     func setCell(tweet: Tweet) {
+        let df = DateFormatter()
+        df.locale = Locale(identifier: "en_US")
+        df.dateFormat = "EEE MMM dd HH:mm:ss Z yyyy"
         self.tweetText.enabledTextCheckingTypes = NSTextCheckingResult.CheckingType.link.rawValue
-       if tweet.retweetedStatus?.user?.name != "" {
+        if tweet.retweetedStatus?.user?.name != "" {
             self.userName.text = tweet.retweetedStatus?.user?.name
             self.userScreenName.text = "@" + (tweet.retweetedStatus?.user?.screenName ?? "")
             self.userProfileImage.kf.setBackgroundImage(with: URL(string: tweet.retweetedStatus?.user?.profileImageURLHttps ?? ""), for: .normal)
             self.tweetText.text = tweet.retweetedStatus?.text
+            let date = df.date(from: (tweet.retweetedStatus?.createdAt)!)
+            let durarion = date?.offsetFrom()
+            self.tweetTime.text = durarion
         }else {
             self.userName.text = tweet.user?.name
             self.userScreenName.text = "@" + (tweet.user?.screenName ?? "")
             self.userProfileImage.kf.setBackgroundImage(with: URL(string: tweet.user?.profileImageURLHttps ?? ""), for: .normal)
             self.tweetText.text = tweet.text
+            let date =  df.date(from: tweet.createdAt)
+            let durarion = date?.offsetFrom()
+            self.tweetTime.text = durarion
         }
-        self.tweetTime.text = ""
     }
     
     func attributedLabel(_ label: TTTAttributedLabel!, didSelectLinkWith url: URL!) {
