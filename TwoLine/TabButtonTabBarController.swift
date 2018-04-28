@@ -13,13 +13,12 @@ import TabPageViewController
 
 class TabButtonTabBarController: UITabBarController {
     
-    func gobackBegin() {
-        self.dismiss(animated: true, completion: nil)
-    }
     
     override func viewDidLoad() {
-        setupHome()
-        tabBar.bounds.size.height = tabBar.bounds.size.height * 1     //0.5~0.7
+        
+        super.viewDidLoad()
+        
+//        tabBar.bounds.size.height = tabBar.bounds.size.height * 1     //0.5~0.7
         
 //        TWTRLogin()
         setupTabButton()
@@ -27,28 +26,11 @@ class TabButtonTabBarController: UITabBarController {
         
         //gobackBegin()
         
-        self.navigationController?.navigationBar.backgroundColor = UIColor.white  // バー背景色
-        
-        
-        super.viewDidLoad()
     }
     
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-    
-    private func setupHome() {
-        let pageVC = TabPageViewController.create()
-        let vc1 = PageTableViewController.create()
-        let vc2 = ListTimelineViewController()
-        let vc3 = UINavigationController()
-        pageVC.tabItems = [(vc1, "Home"), (vc2, "ListTimeLine"), (vc3, "test")]
-        let tabHeight = CGFloat(pageVC.option.tabHeight + pageVC.option.tabMargin)
-        if pageVC.tabItems.count >= 3 {
-            pageVC.isInfinity = true
-        }
-        viewControllers?.insert(pageVC, at: 0)
-        pageVC.tabBarItem.image = UIImage(named: "Home.png")
     }
     
     private func setupTabButton(){
@@ -78,23 +60,56 @@ class TabButtonTabBarController: UITabBarController {
         tabBar.addSubview(tweetButton)
     }
     
-    @objc func transitionTweetTextView(){
-        
-    }
-    
     @objc func tapTabButton() {
         print("Tap TabButton")
     }
     
     @objc func tapTweetButton() {
         print("tapTweetButton")
-        let nextViewController = PostTweetViewController()
-        self.present(nextViewController, animated: true, completion: nil)
+        openPostTweetWindow()
     }
     
-    func TWTRLogin() {
-        TWTRLogin()
+    func openPostTweetWindow() {
+        var postTweetTextWindow = UIWindow()
+        var tweetTextView = UITextView()
+        var postTweetButton = UIButton()
+        var userIcon = UIButton()
+        postTweetButton.addTarget(self, action: #selector(self.postTweet(_: )), for: .touchUpInside)
+        postTweetTextWindow.bounds = UIScreen.main.bounds
+        postTweetTextWindow.center.x = UIScreen.main.bounds.width / 2
+        postTweetTextWindow.center.y = UIScreen.main.bounds.height / 2
+        postTweetTextWindow.backgroundColor = UIColor.red
+        tabBar.addSubview(postTweetTextWindow)
     }
     
+    @objc func postTweet(_ sender: UIButton) {
+        
+        let tweetText: String = ""
+        
+        guard let session = Twitter.sharedInstance().sessionStore.session() else {
+            return
+        }
+        var clientError: NSError?
+        
+        let apiClient = TWTRAPIClient(userID: session.userID)
+        DispatchQueue.global(qos: .default).async {
+            
+            let request = apiClient.urlRequest(
+                withMethod: "POST",
+                url: "https://api.twitter.com/1.1/statuses/update.json?",
+                parameters: [
+                    "status": tweetText
+                ],
+                error: &clientError
+            )
+            apiClient.sendTwitterRequest(request) { response, data, error in
+                if let error = error {
+                    print(error.localizedDescription)
+                } else if let data = data {
+                    
+                }
+            }
+        }
+    }
     
 }

@@ -73,7 +73,7 @@ class PageTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        
+        self.tableView.delaysContentTouches = false
         self.tableView.delegate = self
         self.tableView.dataSource = self
         tableView.estimatedRowHeight = 45
@@ -83,7 +83,9 @@ class PageTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        ShowTweet()
+        DispatchQueue.global(qos: .background).async {
+            self.ShowTweet()
+        }
     }
 
     override func didReceiveMemoryWarning() {

@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 
 struct Hashtag {
-    
+      
     //テキスト
     var text: String?
     
@@ -21,6 +21,7 @@ struct Hashtag {
         
         self.text = json["test"].stringValue
         self.indices = json["indices"].arrayValue.map({$0.intValue})
+        
     }
     
     

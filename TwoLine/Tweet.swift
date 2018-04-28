@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-struct Tweet {
+class Tweet {
     // Tweetのid
     var idStr: String = ""
     
@@ -22,7 +22,7 @@ struct Tweet {
     // Tweetされた時間
     var createdAt: String = ""
     
-    // hash tagとurl、メディア
+    // HashTag, URL and media
     let entities: Entities?
     
     //自分がお気に入りしたか

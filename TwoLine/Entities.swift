@@ -12,13 +12,13 @@ import SwiftyJSON
 struct Entities {
     
     //ハッシュタグ
-    var hashtags: [Hashtag]
+    var hashtags: [Hashtag] = []
     
     //URL
-    var URLs: [URLObject?]
+    var URLs: [URLObject?] = []
     
     //@ツイート
-    var userMentions: [UserMentions?]
+    var userMentions: [UserMentions?] = []
     
     //media（画像、動画）
     var media: [Media?]

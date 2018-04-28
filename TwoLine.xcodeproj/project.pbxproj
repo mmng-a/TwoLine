@@ -14,7 +14,6 @@
 		E605CBF22015976D0045379A /* Tweet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E605CBF12015976D0045379A /* Tweet2.swift */; };
 		E609E3351F1B9B31006920B0 /* IMG_0562.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E609E3331F1B9B31006920B0 /* IMG_0562.jpg */; };
 		E609E3361F1B9B31006920B0 /* IMG_5624.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E609E3341F1B9B31006920B0 /* IMG_5624.jpg */; };
-		E6164058207C44E200572353 /* ChangeCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6164057207C44E200572353 /* ChangeCharacter.swift */; };
 		E616405E207D922000572353 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E616405D207D922000572353 /* DateExtension.swift */; };
 		E631B2A21EFF886D008A8A91 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29D1EFF886D008A8A91 /* Home.png */; };
 		E631B2A31EFF886D008A8A91 /* reload.png in Resources */ = {isa = PBXBuildFile; fileRef = E631B29E1EFF886D008A8A91 /* reload.png */; };
@@ -25,8 +24,9 @@
 		E64549881F035CFE00B39016 /* PageTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E64549871F035CFE00B39016 /* PageTableViewController.storyboard */; };
 		E65C99481FA57DDA0015568F /* ListTimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */; };
 		E65D4F781F2E09940042AF5C /* Add.png in Resources */ = {isa = PBXBuildFile; fileRef = E65D4F771F2E09940042AF5C /* Add.png */; };
+		E66AE8AA208F4D1000391ED3 /* TestHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66AE8A9208F4D1000391ED3 /* TestHomeViewController.swift */; };
 		E6706EA21FDCFACA008A2AFC /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6706EA11FDCFACA008A2AFC /* Entities.swift */; };
-		E676459F203CFFCA00449D87 /* HomeNavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E676459E203CFFCA00449D87 /* HomeNavigationVC.swift */; };
+		E676459F203CFFCA00449D87 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E676459E203CFFCA00449D87 /* HomeViewController.swift */; };
 		E68358391F11F18B00388BF8 /* PageTweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */; };
 		E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */; };
 		E69EB7931EC81B24001FEC62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7921EC81B24001FEC62 /* AppDelegate.swift */; };
@@ -39,10 +39,8 @@
 		E69EB7DE1EC82C13001FEC62 /* SettingVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7DD1EC82C13001FEC62 /* SettingVIewController.swift */; };
 		E69EB7E71EC98695001FEC62 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7E61EC98695001FEC62 /* User.swift */; };
 		E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69EB7E81EC98A05001FEC62 /* Tweet.swift */; };
-		E6AFA1A71F8095AA00F4B26D /* MyTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AFA1A61F8095AA00F4B26D /* MyTabbar.swift */; };
 		E6C026951F16511100D93C88 /* AddUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C026941F16511100D93C88 /* AddUIColor.swift */; };
 		E6E413621F6E16DE0072ACF4 /* TimelineParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E413611F6E16DE0072ACF4 /* TimelineParser.swift */; };
-		E6E413641F6E22B50072ACF4 /* PostTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */; };
 		E6FD09322001F1B0007AD349 /* Hashtag.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD09312001F1B0007AD349 /* Hashtag.swift */; };
 		E6FD09342001F5D2007AD349 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD09332001F5D2007AD349 /* URLs.swift */; };
 		E6FD093820020671007AD349 /* UserMentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6FD093720020671007AD349 /* UserMentions.swift */; };
@@ -80,7 +78,6 @@
 		E605CBF12015976D0045379A /* Tweet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet2.swift; sourceTree = "<group>"; };
 		E609E3331F1B9B31006920B0 /* IMG_0562.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0562.jpg; sourceTree = "<group>"; };
 		E609E3341F1B9B31006920B0 /* IMG_5624.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_5624.jpg; sourceTree = "<group>"; };
-		E6164057207C44E200572353 /* ChangeCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCharacter.swift; sourceTree = "<group>"; };
 		E616405D207D922000572353 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		E631B29D1EFF886D008A8A91 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
 		E631B29E1EFF886D008A8A91 /* reload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload.png; sourceTree = "<group>"; };
@@ -91,8 +88,9 @@
 		E64549871F035CFE00B39016 /* PageTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageTableViewController.storyboard; sourceTree = "<group>"; };
 		E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTimeLineViewController.swift; sourceTree = "<group>"; };
 		E65D4F771F2E09940042AF5C /* Add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Add.png; sourceTree = "<group>"; };
+		E66AE8A9208F4D1000391ED3 /* TestHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHomeViewController.swift; sourceTree = "<group>"; };
 		E6706EA11FDCFACA008A2AFC /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
-		E676459E203CFFCA00449D87 /* HomeNavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationVC.swift; sourceTree = "<group>"; };
+		E676459E203CFFCA00449D87 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTweetTableViewCell.swift; sourceTree = "<group>"; };
 		E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabButtonTabBarController.swift; sourceTree = "<group>"; };
 		E69EB78F1EC81B24001FEC62 /* TwoLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,10 +109,8 @@
 		E69EB7DD1EC82C13001FEC62 /* SettingVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVIewController.swift; sourceTree = "<group>"; };
 		E69EB7E61EC98695001FEC62 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E69EB7E81EC98A05001FEC62 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
-		E6AFA1A61F8095AA00F4B26D /* MyTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabbar.swift; sourceTree = "<group>"; };
 		E6C026941F16511100D93C88 /* AddUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUIColor.swift; sourceTree = "<group>"; };
 		E6E413611F6E16DE0072ACF4 /* TimelineParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineParser.swift; sourceTree = "<group>"; };
-		E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTweetViewController.swift; sourceTree = "<group>"; };
 		E6FD09312001F1B0007AD349 /* Hashtag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hashtag.swift; sourceTree = "<group>"; };
 		E6FD09332001F5D2007AD349 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 		E6FD093720020671007AD349 /* UserMentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMentions.swift; sourceTree = "<group>"; };
@@ -210,7 +206,7 @@
 				E68DD43E1EDA9705004D505E /* TabButtonTabBarController.swift */,
 				E64549851F035CC100B39016 /* PageTableViewController.swift */,
 				E64549871F035CFE00B39016 /* PageTableViewController.storyboard */,
-				E676459E203CFFCA00449D87 /* HomeNavigationVC.swift */,
+				E676459E203CFFCA00449D87 /* HomeViewController.swift */,
 				E68358381F11F18B00388BF8 /* PageTweetTableViewCell.swift */,
 				E6E413611F6E16DE0072ACF4 /* TimelineParser.swift */,
 				E69EB7981EC81B24001FEC62 /* Main.storyboard */,
@@ -218,11 +214,9 @@
 				E69EB79D1EC81B24001FEC62 /* LaunchScreen.storyboard */,
 				E69EB7A01EC81B24001FEC62 /* Info.plist */,
 				E6C026941F16511100D93C88 /* AddUIColor.swift */,
-				E6E413631F6E22B50072ACF4 /* PostTweetViewController.swift */,
-				E6AFA1A61F8095AA00F4B26D /* MyTabbar.swift */,
 				E65C99471FA57DDA0015568F /* ListTimeLineViewController.swift */,
-				E6164057207C44E200572353 /* ChangeCharacter.swift */,
 				E616405D207D922000572353 /* DateExtension.swift */,
+				E66AE8A9208F4D1000391ED3 /* TestHomeViewController.swift */,
 			);
 			path = TwoLine;
 			sourceTree = "<group>";
@@ -590,22 +584,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C026951F16511100D93C88 /* AddUIColor.swift in Sources */,
-				E676459F203CFFCA00449D87 /* HomeNavigationVC.swift in Sources */,
+				E676459F203CFFCA00449D87 /* HomeViewController.swift in Sources */,
 				E6FD09342001F5D2007AD349 /* URLs.swift in Sources */,
 				E6FD093A20070F0D007AD349 /* Media.swift in Sources */,
 				E68358391F11F18B00388BF8 /* PageTweetTableViewCell.swift in Sources */,
+				E66AE8AA208F4D1000391ED3 /* TestHomeViewController.swift in Sources */,
 				E69EB7DE1EC82C13001FEC62 /* SettingVIewController.swift in Sources */,
-				E6AFA1A71F8095AA00F4B26D /* MyTabbar.swift in Sources */,
 				E6706EA21FDCFACA008A2AFC /* Entities.swift in Sources */,
 				E6FD09322001F1B0007AD349 /* Hashtag.swift in Sources */,
 				E65C99481FA57DDA0015568F /* ListTimeLineViewController.swift in Sources */,
 				E69EB7E71EC98695001FEC62 /* User.swift in Sources */,
-				E6164058207C44E200572353 /* ChangeCharacter.swift in Sources */,
 				E605CBF0201459D50045379A /* Account.swift in Sources */,
 				E69EB7E91EC98A05001FEC62 /* Tweet.swift in Sources */,
 				E616405E207D922000572353 /* DateExtension.swift in Sources */,
 				E64549861F035CC100B39016 /* PageTableViewController.swift in Sources */,
-				E6E413641F6E22B50072ACF4 /* PostTweetViewController.swift in Sources */,
 				E69EB7971EC81B24001FEC62 /* SearchViewController.swift in Sources */,
 				E6E413621F6E16DE0072ACF4 /* TimelineParser.swift in Sources */,
 				E68DD43F1EDA9705004D505E /* TabButtonTabBarController.swift in Sources */,
