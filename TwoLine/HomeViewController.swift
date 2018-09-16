@@ -24,7 +24,11 @@ class HomeViewController: TabPageViewController {
         let vc1 = PageTableViewController.create()
         let vc2 = ListTimelineViewController()
         let vc3 = UITableViewController()
-        let vc4 = ListTimelineViewController()
+        let vc4 = UIViewController()
+        let addView = PageTableViewController.create().view
+        vc4.view.addSubview(addView!)
+//        let tabHeight = (self.navigationController?.navigationBar.bounds.height)! + self.option.tabHeight + self.option.tabMargin
+//        addView?.topAnchor.constraint(equalTo: vc4.view.topAnchor, constant: tabHeight).isActive = true
         tabItems = [(vc1, "Home"), (vc2, "ListTimeLine"), (vc3, "test"), (vc4, "test2")]
         if tabItems.count >= 4 {
             isInfinity = true

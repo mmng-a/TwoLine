@@ -28,7 +28,7 @@ class TestHomeViewController: UIPageViewController {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        super.init(transitionStyle: UIPageViewControllerTransitionStyle(rawValue: 1)!, navigationOrientation: UIPageViewControllerNavigationOrientation(rawValue: 0)!, options: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,6 +53,8 @@ class TestHomeViewController: UIPageViewController {
 
 }
 
+
+//pageViewによる画面遷移
 extension TestHomeViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController,
